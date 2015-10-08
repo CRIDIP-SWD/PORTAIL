@@ -87,14 +87,14 @@
                     <div class="content">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="" role="menuitem">Etat des Services</a>
+                                <a href="" role="menuitem" tabindex="-1">Etat des Services</a>
                             </li>
                             <li>
-                                <a href="" role="menuitem">Chantier</a>
+                                <a href="" role="menuitem" tabindex="-1">Chantier</a>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="" role="menuitem">Support / Wiki</a>
+                                <a href="" role="menuitem" tabindex="-1">Support / Wiki</a>
                             </li>
 
                         </ul>
