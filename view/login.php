@@ -84,9 +84,31 @@ include ('inc/header.php');
 <?php if(isset($_GET['error']) && $_GET['error'] == 'user'){ ?>
     <script type="text/javascript">
         var notice = new PNotify({
-            title: 'Notification',
-            text: 'Some notification text.',
+            title: 'ERREUR',
+            text: 'Adresse Mail ou Mot de passe incorrect !',
             type: 'error',
+            addclass: 'stack-bottomright',
+            stack: stack_bottomright
+        });
+    </script>
+<?php } ?>
+<?php if(isset($_GET['error']) && $_GET['error'] == 'multi-user'){ ?>
+    <script type="text/javascript">
+        var notice = new PNotify({
+            title: 'ERREUR',
+            text: 'Problème avec la base de donnée',
+            type: 'error',
+            addclass: 'stack-bottomright',
+            stack: stack_bottomright
+        });
+    </script>
+<?php } ?>
+<?php if(isset($_GET['error']) && $_GET['error'] == 'user'){ ?>
+    <script type="text/javascript">
+        var notice = new PNotify({
+            title: 'ATTENTION',
+            text: 'Un ou plusieurs champs ne sont pas renseigner !',
+            type: 'notice',
             addclass: 'stack-bottomright',
             stack: stack_bottomright
         });
