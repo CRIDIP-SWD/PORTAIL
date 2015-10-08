@@ -12,11 +12,11 @@
     <!-- start: search & user box -->
     <div class="header-right">
         <div class="menu-gen">
-            <a class="menu-gen-title" href="index.php?view=cridip">CRIDIP</a>
+            <a class="menu-gen-title <?php if(isset($_GET['view']) && $_GET['view'] == 'cridip'){echo "text-danger";} ?>" href="index.php?view=cridip">CRIDIP</a>
             <span class="separator"></span>
-            <a class="menu-gen-title" href="index.php?view=swd">CRIDIP-SWD</a>
+            <a class="menu-gen-title <?php if(isset($_GET['view']) && $_GET['view'] == 'swd'){echo "text-danger";} ?>" href="index.php?view=swd">CRIDIP-SWD</a>
             <span class="separator"></span>
-            <a class="menu-gen-title" href="index.php?view=scpvs">SCPVS</a>
+            <a class="menu-gen-title <?php if(isset($_GET['view']) && $_GET['view'] == 'scpvs'){echo "text-danger";} ?>" href="index.php?view=scpvs">SCPVS</a>
         </div>
         <span class="separator"></span>
 
