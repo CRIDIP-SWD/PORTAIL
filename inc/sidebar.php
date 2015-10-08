@@ -16,7 +16,7 @@
             <?php if($_GET['view'] == 'cridip'){ ?>
                 <nav id="menu" class="nav-main" role="CRIDIP">
                     <ul class="nav nav-main">
-                        <li <?php if($_GET['sub'] == 'devis'){echo "nav-active";} ?>>
+                        <li <?php if(isset($_GET['sub']) && $_GET['sub'] == 'devis'){echo "nav-active";} ?>>
                             <a href="index.php?view=cridip&sub=devis">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                                 <span>Vos Devis</span>
