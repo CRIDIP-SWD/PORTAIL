@@ -16,7 +16,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'deconnexion')
     session_destroy();
     header("Location: ../index.php?view=login");
 }
-if(isset($_GET['action']) && $_GET['action'] == 'connexion')
+if(isset($_POST['action']) && $_POST['action'] == 'connexion')
 {
     if ((isset($_POST['email']) && !empty($_POST['email'])) && (isset($_POST['password']) && !empty($_POST['password']))) {
         $login = $_POST['email'];
