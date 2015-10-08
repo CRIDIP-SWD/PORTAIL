@@ -1,6 +1,7 @@
 <?php
 $login = "mmockelyn@cridip.com";
 include "config.php";
+include "classe.php";
 ?>
 <!doctype html>
 <html class="fixed">
