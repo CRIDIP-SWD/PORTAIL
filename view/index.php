@@ -39,14 +39,18 @@ include ('inc/header.php');
 
                                 var flotWidgetsSales1Data = [{
                                     data: [
-                                        ["Jan", 140],
-                                        ["Feb", 240],
-                                        ["Mar", 190],
-                                        ["Apr", 140],
-                                        ["May", 180],
-                                        ["Jun", 320],
-                                        ["Jul", 270],
-                                        ["Aug", 180]
+                                        ["Jan", <?= $wg->data_fct(01, $client['iduser']); ?>],
+                                        ["Fev", <?= $wg->data_fct(02, $client['iduser']); ?>],
+                                        ["Mar", <?= $wg->data_fct(03, $client['iduser']); ?>],
+                                        ["Avr", <?= $wg->data_fct(04, $client['iduser']); ?>],
+                                        ["Mai", <?= $wg->data_fct(05, $client['iduser']); ?>],
+                                        ["Juin", <?= $wg->data_fct(06, $client['iduser']); ?>],
+                                        ["Juill", <?= $wg->data_fct(07, $client['iduser']); ?>],
+                                        ["Aout", <?= $wg->data_fct(08, $client['iduser']); ?>],
+                                        ["Sept", <?= $wg->data_fct(09, $client['iduser']); ?>],
+                                        ["Oct", <?= $wg->data_fct(10, $client['iduser']); ?>],
+                                        ["Nov", <?= $wg->data_fct(11, $client['iduser']); ?>],
+                                        ["Dec", <?= $wg->data_fct(12, $client['iduser']); ?>]
                                     ],
                                     color: "#0088cc"
                                 }];
