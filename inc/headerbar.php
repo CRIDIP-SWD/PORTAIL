@@ -106,7 +106,7 @@
                 <ul class="list-unstyled">
                     <li class="divider"></li>
                     <li>
-                        <a role="menuitem" tabindex="-1" href="index.php?view=client-profil"><i class="fa fa-user"></i> Mon Profil</a>
+                        <a role="menuitem" tabindex="-1" href="index.php?view=index&sub=mon_profil"><i class="fa fa-user"></i> Mon Profil</a>
                     </li>
                     <li>
                         <a role="menuitem" tabindex="-1" href="<?= ROOT,CONTROL; ?>client.php?action=deconnexion"><i class="fa fa-power-off"></i> Déconnexion</a>
