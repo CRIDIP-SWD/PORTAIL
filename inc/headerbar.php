@@ -82,13 +82,18 @@
                     <i class="fa fa-arrow-circle-down"></i>
                 </a>
 
-                <div class="dropdown-menu notification-menu large">
+                <div class="dropdown-menu">
 
                     <div class="content">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>
                                 <a href="">Etat des Services</a>
-                                <a href="">Chantiers</a>
+                            </li>
+                            <li>
+                                <a href="">Chantier</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
                                 <a href="">Support / Wiki</a>
                             </li>
 
