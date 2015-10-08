@@ -157,6 +157,7 @@ include ('inc/header.php');
 <!-- Examples -->
 <script src="<?= ROOT,ASSETS,JS; ?>dashboard/examples.dashboard.js"></script>
 <script src="<?= ROOT,ASSETS,JS; ?>ui-elements/examples.widgets.js"></script>
+<script src="<?= ROOT,ASSETS,JS; ?>ui-elements/examples.modals.js"></script>
 
 </body>
 </html>
