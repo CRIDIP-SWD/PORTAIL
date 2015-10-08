@@ -2,11 +2,10 @@
 .menu-gen{
     display: inline-block;
     vertical-align: middle;
-    background-color: rgba(0, 0, 0, 0.53);
 }
 .menu-gen a{
     text-decoration: none;
-    color: #c1c1c1;
+    color: #000000;
 
 }
 .menu-gen span.separator{
