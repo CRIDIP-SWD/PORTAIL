@@ -13,6 +13,10 @@ switch($_GET['view'])
         include ('view/cridip.php');
         break;
 
+    case 'login':
+        include('view/login.php');
+        break;
+
     default:
         include('view/error404.php');
         break;
