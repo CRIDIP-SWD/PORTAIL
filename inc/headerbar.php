@@ -79,11 +79,10 @@
         <div class="btn-group">
             <span data-toggle="dropdown" class="mb-xs mt-xs mr-xs dropdown-toggle" style="cursor: hand;" aria-expanded="false"><i class="fa fa-arrow-circle-o-down"></i> </span>
             <ul role="menu" class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#"><i class="fa fa-serveur"></i> Etat des Services</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> Chantier</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#"><i class="fa fa-life-bouy"></i> Support / Wiki</a></li>
             </ul>
         </div>
 
