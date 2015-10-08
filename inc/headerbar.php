@@ -197,7 +197,7 @@
                         <a role="menuitem" tabindex="-1" href="index.php?view=client-profil"><i class="fa fa-user"></i> Mon Profil</a>
                     </li>
                     <li>
-                        <a role="menuitem" tabindex="-1" href="<?= ROOT,CONTROL; ?>client.php?action=deconnexion"><i class="fa fa-power-off"></i> Déconnexion</a>
+                        <a role="menuitem" tabindex="-1" href="<?= ROOT,CONTROL; ?>client.php?action=deconnexion"><i class="fa fa-power-off"></i> DÃ©connexion</a>
                     </li>
                 </ul>
             </div>

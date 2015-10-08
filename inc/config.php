@@ -51,7 +51,7 @@ class date_format{
         switch($mois)
         {
             case 1: echo "Janvier"; break;
-            case 2: echo "Février"; break;
+            case 2: echo "FÃ©vrier"; break;
             case 3: echo "Mars"; break;
             case 4: echo "Avril"; break;
             case 5: echo "Mai"; break;
@@ -61,7 +61,7 @@ class date_format{
             case 9: echo "Septembre"; break;
             case 10: echo "Octobre"; break;
             case 11: echo "Novembre"; break;
-            case 12: echo "Décembre"; break;
+            case 12: echo "DÃ©cembre"; break;
         }
     }
     public function formatage($date_format)
@@ -89,7 +89,7 @@ function nom_page($page)
     return $page;
 }
 
-//Connexion à la base de donnée
+//Connexion Ã  la base de donnÃ©e
 
 class database{
     public $host = "localhost";
