@@ -30,10 +30,11 @@ include ('inc/header.php');
             </header>
 
             <?php if(!isset($_GET['sub'])){ ?>
-
+                <h1 class="text-center">BIENVENUE SUR VOTRE PANEL UTILISATEUR CRIDIP</h1>
+                <h3 class="text-center text-muted">Veuillez selectionner un lien du menu pour avoir un aperçu de votre compte.</h3>
             <?php } ?>
             <?php if(isset($_GET['sub']) && $_GET['sub'] == 'devis'){ ?>
-                <h1 class="alternative-font">VOS DEVIS</h1>
+                <h1>VOS DEVIS</h1>
             <?php } ?>
         </section>
     </div>
