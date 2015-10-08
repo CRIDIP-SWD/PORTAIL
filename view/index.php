@@ -34,41 +34,14 @@ include ('inc/header.php');
                 <div class="col-md-6 col-lg-12 col-xl-6">
                     <section class="panel panel-featured panel-featured-primary">
                         <div class="panel-body">
-                            <div class="chart chart-sm" id="flotWidgetsSales1"></div>
-                            <script>
-
-                                var flotWidgetsSales1Data = [{
-                                    data: [
-                                        ["Jan", <?= $wg->data_fct(01, $client['iduser']); ?>],
-                                        ["Fev", <?= $wg->data_fct(02, $client['iduser']); ?>],
-                                        ["Mar", <?= $wg->data_fct(03, $client['iduser']); ?>],
-                                        ["Avr", <?= $wg->data_fct(04, $client['iduser']); ?>],
-                                        ["Mai", <?= $wg->data_fct(05, $client['iduser']); ?>],
-                                        ["Juin", <?= $wg->data_fct(06, $client['iduser']); ?>],
-                                        ["Juill", <?= $wg->data_fct(07, $client['iduser']); ?>],
-                                        ["Aout", <?= $wg->data_fct(08, $client['iduser']); ?>],
-                                        ["Sept", <?= $wg->data_fct(09, $client['iduser']); ?>],
-                                        ["Oct", <?= $wg->data_fct(10, $client['iduser']); ?>],
-                                        ["Nov", <?= $wg->data_fct(11, $client['iduser']); ?>],
-                                        ["Dec", <?= $wg->data_fct(12, $client['iduser']); ?>]
-                                    ],
-                                    color: "#0088cc"
-                                }];
-
-                            </script>
-                            <hr class="solid short mt-lg">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <div class="h4 text-weight-bold mb-none mt-lg">488</div>
-                                    <p class="text-xs text-muted mb-none">Total Sales</p>
+                                <div class="col-md-6">
+                                    <div class="h4 text-weight-bold mb-none mt-lg"><?= $wg->data_fct(date("m"),$client['idclient']); ?></div>
+                                    <p class="text-xs text-muted mb-none">Vente Total du mois</p>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="h4 text-weight-bold mb-none mt-lg">$1000</div>
                                     <p class="text-xs text-muted mb-none">Profit</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="h4 text-weight-bold mb-none mt-lg">123</div>
-                                    <p class="text-xs text-muted mb-none">Comments</p>
                                 </div>
                             </div>
                         </div>
