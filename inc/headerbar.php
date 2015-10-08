@@ -86,9 +86,9 @@
                 <li class="divider"></li>
                 <li><a href="index.php?view=index&sub=support_wiki"><i class="fa fa-life-bouy"></i> Support / Wiki</a></li>
             </ul>
-            <div id="maj" class="modal-block modal-block-primary modal-header-color mfp-hide" style="top: -200px;">
+            <div id="maj" class="modal-block modal-block-dark modal-header-color mfp-hide" style="top: -200px;">
                 <section class="panel">
-                    <header class="panel-heading bg-dark text-primary">
+                    <header class="panel-heading">
                         <button type="button" data-dismiss="maj" class="close"><i class="fa fa-times"></i></button>
                         <h2 class="panel-title">Note de Mise à jour</h2>
                     </header>
