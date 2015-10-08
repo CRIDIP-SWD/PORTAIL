@@ -24,7 +24,7 @@
             <li>
                 <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
                     <i class="fa fa-server"></i>
-                    <span class="badge"><?php if($ovh->get('/me')){echo "<i class='fa fa-circle text-success'></i>";}else{echo "<i class='fa fa-circle text-danger'></i>";} ?></span>
+                    <span style="background: #d2312d none repeat scroll 0 0;color: #fff;font-size: 10px;font-weight: normal;height: 16px;padding: 3px 5px;position: absolute;right: -8px;top: -3px;"><?php if($ovh->get('/me')){echo "<i class='fa fa-circle text-success'></i>";}else{echo "<i class='fa fa-circle text-danger'></i>";} ?></span>
                 </a>
 
                 <div class="dropdown-menu notification-menu large">
