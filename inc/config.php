@@ -8,7 +8,7 @@ DEFINE("BUILD_LOGICIEL", "1236");
 DEFINE("ROOT", "http://portail.cridip.com/");
 DEFINE("ASSETS", "assets/");
 DEFINE("IMAGES", "images/");
-DEFINE("JS", "javascript/");
+DEFINE("JS", "javascripts/");
 DEFINE("CSS", "stylesheets/");
 DEFINE("VENDOR", "vendor/");
 DEFINE("CONTROL", "control/");
