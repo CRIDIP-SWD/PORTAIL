@@ -36,7 +36,7 @@ include ('inc/header.php');
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="h4 text-weight-bold mb-none mt-lg"><?= $wg->data_fct(date("m"),$client['idclient']); ?></div>
+                                    <div class="h4 text-weight-bold mb-none mt-lg"><?= $wg->data_fct(date("n"),$client['idclient']); ?></div>
                                     <p class="text-xs text-muted mb-none">Vente Total du mois</p>
                                 </div>
                                 <div class="col-md-6">
