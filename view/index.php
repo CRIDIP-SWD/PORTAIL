@@ -35,51 +35,41 @@ include ('inc/header.php');
                     <section class="panel">
                         <div class="panel-body">
                             <div class="row">
-                                <section class="panel">
-                                    <div class="panel-body bg-primary">
+                                <section class="panel panel-featured panel-featured-primary">
+                                    <div class="panel-body">
+                                        <div class="chart chart-sm" id="flotWidgetsSales1"></div>
+                                        <script>
 
-                                        <div class="chart chart-sm" id="morrisLine"></div>
-                                        <script type="text/javascript">
-
-                                            var morrisLineData = [{
-                                                y: 'Janvier',
-                                                a:
-                                            }, {
-                                                y: 'Février',
-                                                a: 80
-                                            }, {
-                                                y: 'Mars',
-                                                a: 35
-                                            }, {
-                                                y: 'Avril',
-                                                a: 95
-                                            }, {
-                                                y: 'Mai',
-                                                a: 120
-                                            }, {
-                                                y: 'Juin',
-                                                a: 200
-                                            },{
-                                                y: 'Juillet',
-                                                a: 80
-                                            }, {
-                                                y: 'Aout',
-                                                a: 35
-                                            }, {
-                                                y: 'Septembre',
-                                                a: 95
-                                            }, {
-                                                y: 'Octobre',
-                                                a: 120
-                                            }, {
-                                                y: 'Novembre',
-                                                a: 200
-                                            }, {
-                                                y: 'Décembre',
-                                                a: 200
+                                            var flotWidgetsSales1Data = [{
+                                                data: [
+                                                    ["Jan", 140],
+                                                    ["Feb", 240],
+                                                    ["Mar", 190],
+                                                    ["Apr", 140],
+                                                    ["May", 180],
+                                                    ["Jun", 320],
+                                                    ["Jul", 270],
+                                                    ["Aug", 180]
+                                                ],
+                                                color: "#0088cc"
                                             }];
 
                                         </script>
+                                        <hr class="solid short mt-lg">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="h4 text-weight-bold mb-none mt-lg">488</div>
+                                                <p class="text-xs text-muted mb-none">Total Sales</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="h4 text-weight-bold mb-none mt-lg">$1000</div>
+                                                <p class="text-xs text-muted mb-none">Profit</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="h4 text-weight-bold mb-none mt-lg">123</div>
+                                                <p class="text-xs text-muted mb-none">Comments</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
