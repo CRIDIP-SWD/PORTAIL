@@ -11,7 +11,13 @@
 
     <!-- start: search & user box -->
     <div class="header-right">
-
+        <div class="menu-gen">
+            <a class="menu-gen-title" href="">CRIDIP</a>
+            <span class="separator"></span>
+            <a class="menu-gen-title" href="">CRIDIP-SWD</a>
+            <span class="separator"></span>
+            <a class="menu-gen-title" href="">SCPVS</a>
+        </div>
         <span class="separator"></span>
 
         <ul class="notifications">
