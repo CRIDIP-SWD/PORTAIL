@@ -86,7 +86,7 @@
                 <li class="divider"></li>
                 <li><a href="index.php?view=index&sub=support_wiki"><i class="fa fa-life-bouy"></i> Support / Wiki</a></li>
             </ul>
-            <div id="maj" class="modal-block modal-block-md mfp-hide">
+            <div id="maj" class="modal-block modal-block-md mfp-hide" style="top: -150px;">
                 <section class="panel">
                     <header class="panel-heading">
                         <h2 class="panel-title">Are you sure?</h2>
