@@ -89,7 +89,7 @@
             <div id="maj" class="modal-block modal-block-dark modal-header-color modal-block-lg mfp-hide" style="top: -250px;">
                 <section class="panel">
                     <header class="panel-heading">
-                        <button type="button" data-dismiss="maj" class="close"><i class="fa fa-times"></i></button>
+                        <button type="button" data-dismiss="maj" class="modal-dismiss"><i class="fa fa-times"></i></button>
                         <h2 class="panel-title">Note de Mise à jour</h2>
                     </header>
                     <div class="panel-body">
