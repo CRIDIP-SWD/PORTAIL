@@ -12,6 +12,7 @@
 
     <div class="nano">
         <div class="nano-content">
+            <?php if($_GET['view'] == 'index'){} ?>
             <?php if($_GET['view'] == 'cridip'){ ?>
                 <nav id="menu" class="nav-main" role="CRIDIP">
                     <ul class="nav nav-main">
