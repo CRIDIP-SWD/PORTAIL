@@ -77,7 +77,7 @@
         </ul>
         <span class="separator"></span>
         <div class="btn-group">
-            <button data-toggle="dropdown" class="mb-xs mt-xs mr-xs btn btn-default dropdown-toggle" type="button" aria-expanded="false"><i class="fa fa-arrow-circle-o-down"></i> </button>
+            <button data-toggle="dropdown" class="mb-xs mt-xs mr-xs dropdown-toggle" type="button" aria-expanded="false"><i class="fa fa-arrow-circle-o-down"></i> </button>
             <ul role="menu" class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
