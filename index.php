@@ -9,6 +9,10 @@ switch($_GET['view'])
         include ('view/client-profil.php');
         break;
 
+    case 'cridip':
+        include ('view/cridip.php');
+        break;
+
     default:
         include('view/error404.php');
         break;
