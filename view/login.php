@@ -87,8 +87,7 @@ include ('inc/header.php');
             title: 'ERREUR',
             text: 'Adresse Mail ou Mot de passe incorrect !',
             type: 'error',
-            addclass: 'stack-bottomright',
-            stack: stack_bottomright
+            addclass: 'stack-bottomright'
         });
     </script>
 <?php } ?>
@@ -98,8 +97,7 @@ include ('inc/header.php');
             title: 'ERREUR',
             text: 'Problème avec la base de donnée',
             type: 'error',
-            addclass: 'stack-bottomright',
-            stack: stack_bottomright
+            addclass: 'stack-bottomright'
         });
     </script>
 <?php } ?>
@@ -109,8 +107,7 @@ include ('inc/header.php');
             title: 'ATTENTION',
             text: 'Un ou plusieurs champs ne sont pas renseigner !',
             type: 'notice',
-            addclass: 'stack-bottomright',
-            stack: stack_bottomright
+            addclass: 'stack-bottomright'
         });
     </script>
 <?php } ?>
