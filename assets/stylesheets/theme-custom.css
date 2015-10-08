@@ -3,3 +3,16 @@
     display: inline-block;
     vertical-align: middle;
 }
+.menu-gen a{
+    text-decoration: none;
+    color: #c1c1c1;
+}
+.menu-gen span{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(#f6f6f6 60%, #ededed);
+    display: inline-block;
+    height: 100%;
+    margin: 0 25px;
+    vertical-align: middle;
+    width: 2px;
+}
