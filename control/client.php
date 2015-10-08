@@ -33,7 +33,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'connexion')
             $_SESSION['login'] = $_POST['email'];
             header("Location: ../index.php?view=index");
             exit();
-        }elseif($data[0] == 0){
+        }elseif($data == 0){
             header("Location: ../index.php?view=login&error=user");
         }else{
             header("Location: ../index.php?view=login&error=multi-user");
