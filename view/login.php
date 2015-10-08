@@ -137,7 +137,7 @@ include "inc/config.php";
         });
     </script>
 <?php } ?>
-<?php if(isset($_GET['error']) && $_GET['error'] == 'user'){ ?>
+<?php if(isset($_GET['error']) && $_GET['error'] == 'champs'){ ?>
     <script type="text/javascript">
         var notice = new PNotify({
             title: 'ATTENTION',
