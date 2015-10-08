@@ -1,7 +1,12 @@
 <?php
-$login = "mmockelyn@cridip.com";
+session_start();
 include "config.php";
-include "classe.php";
+if(!isset($_SESSION['login']))
+{
+    header("Location: index.php?view=login");
+}
+$login = $_SESSION['login'];
+include('classe.php');
 ?>
 <!doctype html>
 <html class="fixed">
