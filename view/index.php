@@ -105,6 +105,8 @@ include ('inc/header.php');
     </aside>
 </section>
 
+
+<link rel="stylesheet" href="<?= ROOT,ASSETS,VENDOR; ?>pnotify/pnotify.custom.css" />
 <!-- Vendor -->
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery/jquery.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -140,6 +142,7 @@ include ('inc/header.php');
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jqvmap/maps/continents/jquery.vmap.europe.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+<script src="<?= ROOT,ASSETS,VENDOR; ?>pnotify/pnotify.custom.js"></script>
 
 <!-- Theme Base, Components and Settings -->
 <script src="<?= ROOT,ASSETS,JS; ?>theme.js"></script>
@@ -154,5 +157,28 @@ include ('inc/header.php');
 <!-- Examples -->
 <script src="<?= ROOT,ASSETS,JS; ?>dashboard/examples.dashboard.js"></script>
 <script src="<?= ROOT,ASSETS,JS; ?>ui-elements/examples.widgets.js"></script>
+
+<div class="modal-block" id="maj" style="top: -200px">
+    <section class="panel">
+        <header class="panel-heading">
+            <h2 class="panel-title">Are you sure?</h2>
+        </header>
+        <div class="panel-body">
+            <div class="modal-wrapper">
+                <div class="modal-text">
+                    <p>Are you sure that you want to delete this image?</p>
+                </div>
+            </div>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <button class="btn btn-primary modal-confirm">Confirm</button>
+                    <button class="btn btn-default modal-dismiss">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
 </body>
 </html>
