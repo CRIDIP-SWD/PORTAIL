@@ -88,8 +88,9 @@
             </ul>
             <div id="maj" class="modal-block modal-block-md mfp-hide" style="top: -200px;">
                 <section class="panel">
-                    <header class="panel-heading">
-                        <h2 class="panel-title">Are you sure?</h2>
+                    <header class="panel-heading bg-dark">
+                        <button type="button" data-dismiss="maj" class="close"><i class="fa fa-times"></i></button>
+                        <h2 class="panel-title">Note de Mise à jour</h2>
                     </header>
                     <div class="panel-body">
                         <div class="modal-wrapper">
@@ -98,14 +99,6 @@
                             </div>
                         </div>
                     </div>
-                    <footer class="panel-footer">
-                        <div class="row">
-                            <div class="col-md-12 text-right">
-                                <button class="btn btn-primary modal-confirm">Confirm</button>
-                                <button class="btn btn-default modal-dismiss">Cancel</button>
-                            </div>
-                        </div>
-                    </footer>
                 </section>
             </div>
         </div>
