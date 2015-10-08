@@ -1,5 +1,5 @@
 <?php
-$nom_sector = "";
+$nom_sector = "CRIDIP";
 $nom_page   = "";
 include ('inc/header.php');
 ?>
