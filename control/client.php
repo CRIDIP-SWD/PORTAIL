@@ -1,9 +1,8 @@
 <?php
 class client
 {
-    public $login;
 
-    public function __construct($login)
+    public function info_client($login)
     {
         $sql_user = mysql_query("SELECT * FROM client WHERE email = '$login'")or die(mysql_error());
         $client = mysql_fetch_array($sql_user);
