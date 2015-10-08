@@ -1,7 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mmock
- * Date: 08/10/2015
- * Time: 14:11
- */
+require_once "../control/client.php";
+$client = new client($login);
+
