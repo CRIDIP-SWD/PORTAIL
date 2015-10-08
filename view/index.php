@@ -25,6 +25,7 @@ include ('inc/header.php');
                         <?php if(!empty($nom_sector)){echo "<li>".$nom_sector."</li>";} ?>
                         <?php if(!empty($nom_page)){echo "<li>".$nom_page."</li>";} ?>
                     </ol>
+                    <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
                 </div>
             </header>
 
