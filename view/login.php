@@ -56,6 +56,9 @@ include ('inc/header.php');
         <p class="text-center text-muted mt-md mb-md">&copy; Copyright 2015. All Rights Reserved.</p>
     </div>
 </section>
+<!-- CSS PAGE-->
+<link rel="stylesheet" href="<?= ROOT,ASSETS,VENDOR; ?>pnotify/pnotify.custom.css" />
+<!-- END CSS PAGE-->
 
 <!-- Vendor -->
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery/jquery.js"></script>
@@ -66,7 +69,9 @@ include ('inc/header.php');
 <script src="<?= ROOT,ASSETS,VENDOR; ?>magnific-popup/magnific-popup.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-placeholder/jquery.placeholder.js"></script>
 
-
+<!-- JS PAGE -->
+<script src="<?= ROOT,ASSETS,VENDOR; ?>pnotify/pnotify.custom.js"></script>
+<!-- END JS PAGE -->
 
 <!-- Theme Base, Components and Settings -->
 <script src="<?= ROOT,ASSETS,JS; ?>theme.js"></script>
@@ -76,7 +81,17 @@ include ('inc/header.php');
 
 <!-- Theme Initialization Files -->
 <script src="<?= ROOT,ASSETS,JS; ?>theme.init.js"></script>
-
+<?php if(isset($_GET['error']) && $_GET['error'] == 'user'){ ?>
+    <script type="text/javascript">
+        var notice = new PNotify({
+            title: 'Notification',
+            text: 'Some notification text.',
+            type: 'error',
+            addclass: 'stack-bottomright',
+            stack: stack_bottomright
+        });
+    </script>
+<?php } ?>
 
 </body>
 </html>
