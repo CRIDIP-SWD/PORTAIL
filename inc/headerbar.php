@@ -81,6 +81,7 @@
             <ul role="menu" class="dropdown-menu">
                 <li><a href="#"><i class="fa fa-server"></i> Etat des Services</a></li>
                 <li><a href="#"><i class="fa fa-tasks"></i> Chantier</a></li>
+                <li><a href="#"><i class="fa fa-upload"></i> Note de Mise à jour</a></li>
                 <li class="divider"></li>
                 <li><a href="#"><i class="fa fa-life-bouy"></i> Support / Wiki</a></li>
             </ul>
