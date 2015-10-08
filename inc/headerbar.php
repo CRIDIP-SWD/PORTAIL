@@ -89,27 +89,9 @@
                             <li>
                                 <a href="">Etat des Services</a>
                                 <a href="">Chantiers</a>
+                                <a href="">Support / Wiki</a>
                             </li>
 
-                            <li>
-                                <p class="clearfix mb-xs">
-                                    <span class="message pull-left">Importing Contacts</span>
-                                    <span class="message pull-right text-dark">98%</span>
-                                </p>
-                                <div class="progress progress-xs light">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <p class="clearfix mb-xs">
-                                    <span class="message pull-left">Uploading something big</span>
-                                    <span class="message pull-right text-dark">33%</span>
-                                </p>
-                                <div class="progress progress-xs light mb-xs">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
