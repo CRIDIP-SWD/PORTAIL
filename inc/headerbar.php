@@ -76,32 +76,16 @@
             </li>-->
         </ul>
         <span class="separator"></span>
-        <ul class="notifications">
-            <li>
-                <a href="#" data-toggle="dropdown">
-                    <i class="fa fa-arrow-circle-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <div class="content">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="" role="menuitem" tabindex="-1">Etat des Services</a>
-                            </li>
-                            <li>
-                                <a href="" role="menuitem" tabindex="-1">Chantier</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="" role="menuitem" tabindex="-1">Support / Wiki</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </li>
-        </ul>
+        <div class="btn-group">
+            <button data-toggle="dropdown" class="mb-xs mt-xs mr-xs btn btn-default dropdown-toggle" type="button" aria-expanded="false"><i class="fa fa-arrow-circle-o-down"></i> </button>
+            <ul role="menu" class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
 
         <span class="separator"></span>
 
