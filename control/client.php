@@ -25,15 +25,15 @@ if(isset($_POST['action']) && $_POST['action'] == 'connexion')
 
         include "../inc/config.php";
         $sql_verif_account = mysql_query("SELECT COUNT(*) FROM client WHERE email = '$login' AND password = '$pass_enc'")or die(mysql_error());
-        $data = mysql_fetch_array($sql_verif_account);
+        $data = mysql_result($sql_verif_account, 0);
 
-        if($data[0] == 1)
+        if($data == 1)
         {
             session_start();
             $_SESSION['login'] = $_POST['email'];
             header("Location: ../index.php?view=index");
             exit();
-        }elseif($data[0] == 0){
+        }elseif($data == 0){
             header("Location: ../index.php?view=login&error=user");
         }else{
             header("Location: ../index.php?view=login&error=multi-user");
