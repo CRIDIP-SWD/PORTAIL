@@ -13,11 +13,11 @@ include ('inc/header.php');
 
         <section role="main" class="content-body">
             <header class="page-header">
-                <a class="btn" href="index.php?view=cridip">CRIDIP</a>
+                <a class="btn btn-default" href="index.php?view=cridip">CRIDIP</a>
                 <span class="separator"></span>
-                <a class="btn" href="index.php?view=swd">CRIDIP-SWD</a>
+                <a class="btn btn-default" href="index.php?view=swd">CRIDIP-SWD</a>
                 <span class="separator"></span>
-                <a class="btn" href="index.php?view=scpvs">SCPVS</a>
+                <a class="btn btn-default" href="index.php?view=scpvs">SCPVS</a>
 
 
                 <div class="right-wrapper pull-right">
