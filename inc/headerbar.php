@@ -81,7 +81,7 @@
             <ul role="menu" class="dropdown-menu">
                 <li><a href="index.php?view=index&sub=etat_service"><i class="fa fa-server"></i> Etat des Services</a></li>
                 <li><a href="index.php?view=index&sub=chantier"><i class="fa fa-tasks"></i> Chantier</a></li>
-                <li><a data-toggle="modal" data-target="#maj"><i class="fa fa-upload"></i> Note de Mise à jour</a></li>
+                <li><a data-toggle="modal" class="mb-xs mt-xs mr-xs modal-sizes" data-target="#maj"><i class="fa fa-upload"></i> Note de Mise à jour</a></li>
 
                 <li class="divider"></li>
                 <li><a href="index.php?view=index&sub=support_wiki"><i class="fa fa-life-bouy"></i> Support / Wiki</a></li>
