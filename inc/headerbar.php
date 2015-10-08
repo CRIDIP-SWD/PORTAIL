@@ -75,6 +75,7 @@
                 </div>
             </li>-->
         </ul>
+        <span class="separator"></span>
         <ul class="notifications">
             <li>
                 <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
