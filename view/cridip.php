@@ -33,7 +33,7 @@ include ('inc/header.php');
 
             <?php } ?>
             <?php if(isset($_GET['sub']) && $_GET['sub'] == 'devis'){ ?>
-                <h2 class="alternative-font">VOS DEVIS</h2>
+                <h1 class="alternative-font">VOS DEVIS</h1>
             <?php } ?>
         </section>
     </div>
