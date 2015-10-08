@@ -79,8 +79,7 @@
         <ul class="notifications">
             <li>
                 <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
-                    <i class="fa fa-server"></i>
-                    <span style="position: absolute; right: -7px;top: -7px;padding: 3px 5px;height: 16px;font-size: 10px;"><?php if($ovh->get('/me')){echo "<i class='fa fa-circle text-success'></i>";}else{echo "<i class='fa fa-circle text-danger'></i>";} ?></span>
+                    <i class="fa fa-arrow-circle-down"></i>
                 </a>
 
                 <div class="dropdown-menu notification-menu large">
