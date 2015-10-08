@@ -5,7 +5,7 @@ class client
 
     public function __construct($login)
     {
-        $sql_user = mysql_query("SELECT * FROM c_client WHERE login = '$login'")or die(mysql_error());
+        $sql_user = mysql_query("SELECT * FROM c_client WHERE email = '$login'")or die(mysql_error());
         $user = mysql_fetch_array($sql_user);
         return $user;
     }

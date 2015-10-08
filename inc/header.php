@@ -1,5 +1,5 @@
 <?php
-
+$login = "mmockelyn@cridip.com";
 include "config.php";
 ?>
 <!doctype html>
