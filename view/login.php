@@ -1,6 +1,7 @@
 <?php
 $nom_sector = "";
 $nom_page   = "Connexion à l'espace client";
+include "inc/config.php";
 ?>
 <!doctype html>
 <html class="fixed">
