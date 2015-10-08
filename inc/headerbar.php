@@ -86,7 +86,7 @@
                 <li class="divider"></li>
                 <li><a href="index.php?view=index&sub=support_wiki"><i class="fa fa-life-bouy"></i> Support / Wiki</a></li>
             </ul>
-            <div id="maj" class="modal-block modal-block-dark modal-header-color mfp-hide" style="top: -250px;">
+            <div id="maj" class="modal-block modal-block-dark modal-header-color modal-block-lg mfp-hide" style="top: -250px;">
                 <section class="panel">
                     <header class="panel-heading">
                         <button type="button" data-dismiss="maj" class="close"><i class="fa fa-times"></i></button>
