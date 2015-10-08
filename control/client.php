@@ -6,8 +6,8 @@ class client
     public function __construct($login)
     {
         $sql_user = mysql_query("SELECT * FROM client WHERE email = '$login'")or die(mysql_error());
-        $user = mysql_fetch_array($sql_user);
-        return $user;
+        $client = mysql_fetch_array($sql_user);
+        return $client;
     }
 }
 if(isset($_GET['action']) && $_GET['action'] == 'deconnexion')
