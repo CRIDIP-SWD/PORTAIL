@@ -51,23 +51,21 @@ include ('inc/header.php');
                                 <table class="table table-bordered table-striped mb-none" id="etat_service_serveur">
                                     <thead>
                                         <tr>
-                                            <th>Rendering engine</th>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th class="hidden-phone">Engine version</th>
-                                            <th class="hidden-phone">CSS grade</th>
+                                            <th>Zone</th>
+                                            <th>Nom du Serveur</th>
+                                            <th>Etat</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php
+                                    $sql_service_serveur = mysql_query("SELECT * FROM p_service WHERE type_service = 'server'")or die(mysql_error());
+                                    while($s_serveur = mysql_fetch_array($sql_service_serveur))
+                                    {
+                                    ?>
                                         <tr class="gradeX">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td class="center hidden-phone">4</td>
-                                            <td class="center hidden-phone">X</td>
+                                            <td> </td>
                                         </tr>
+                                    <?php } ?>
                                     </tbody>
                                 </table>
                             </div>
