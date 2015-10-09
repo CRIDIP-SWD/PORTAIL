@@ -15,6 +15,11 @@ Theme Version: 	1.4.1
 				"url": "//cdn.datatables.net/plug-ins/1.10.9/i18n/French.json"
 			}
 		});
+		$('#chantier_cridip').dataTable({
+			"language": {
+				"url": "//cdn.datatables.net/plug-ins/1.10.9/i18n/French.json"
+			}
+		});
 
 	};
 
