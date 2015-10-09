@@ -34,7 +34,7 @@ include ('inc/header.php');
                 <h1 class="text-center">BIENVENUE SUR VOTRE PANEL UTILISATEUR</h1>
                 <h3 class="text-center text-muted">Veuillez selectionner un lien du menu pour avoir un aperçu de votre compte.</h3>
             <?php } ?>
-            <?php if(isset($_GET['sub']) && $_GET['sub'] == 'etat-service'){ ?>
+            <?php if(isset($_GET['sub']) && $_GET['sub'] == 'etat_service'){ ?>
                 <h1>ETAT DES SERVICES GWC</h1>
                 <h2>Serveur</h2>
                 <div class="row">
