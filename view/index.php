@@ -303,7 +303,7 @@ include ('inc/header.php');
                                                                         <div class="well bg-dark">
                                                                             <div class="row">
                                                                                 <div class="col-md-6">
-                                                                                    <i class="fa fa-shopping-cart fa-5x"></i><br>
+                                                                                    <i class="fa fa-shopping-cart fa-5x text-center"></i><br>
                                                                                     <h3 class="text-center">Commerce</h3>
                                                                                 </div>
                                                                                 <div class="col-md-6">
