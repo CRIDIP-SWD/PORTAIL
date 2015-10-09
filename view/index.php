@@ -381,10 +381,10 @@ include ('inc/header.php');
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div class="owl-carousel" data-plugin-carousel data-plugin-options='{ "autoPlay": 3000, "items": 3, "itemsDesktop": [1199,4], "itemsDesktopSmall": [979,3], "itemsTablet": [768,2], "itemsMobile": [479,1] }'>
+                                                        <div class="owl-carousel" data-plugin-carousel data-plugin-options='{ "autoPlay": 3000, "items": 2, "itemsDesktop": [1199,4], "itemsDesktopSmall": [979,3], "itemsTablet": [768,2], "itemsMobile": [479,1] }'>
                                                             <div class="item spaced">
                                                                 <div class="well bg-default text-center">
-                                                                    <i class="fa fa-road"></i><br>
+                                                                    <i class="fa fa-road fa-5x"></i><br>
                                                                     <h2>ROADMAP</h2>
                                                                     <p>CRIDIP vous présente ces innovations</p>
                                                                     <a class="btn btn-info">Découvrir</a>
@@ -392,7 +392,7 @@ include ('inc/header.php');
                                                             </div>
                                                             <div class="item spaced">
                                                                 <div class="well bg-default text-center">
-                                                                    <i class="fa fa-file"></i><br>
+                                                                    <i class="fa fa-file fa-5x"></i><br>
                                                                     <h2>GUIDE</h2>
                                                                     <p>A travers des guides complet, familiarisez-vous avec l'environnement de CRIDIP</p>
                                                                     <a class="btn btn-info">Accéder</a>
@@ -400,7 +400,7 @@ include ('inc/header.php');
                                                             </div>
                                                             <div class="item spaced">
                                                                 <div class="well bg-default text-center">
-                                                                    <i class="fa fa-phone"></i><br>
+                                                                    <i class="fa fa-phone fa-5x"></i><br>
                                                                     <h2>CONTACT</h2>
                                                                     <p>Un numéro pour tout les services</p>
                                                                     <a class="btn btn-info">Découvrir</a>
