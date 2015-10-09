@@ -415,6 +415,21 @@ include ('inc/header.php');
                                                 <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_cridip();">CRIDIP</a>
                                                 <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_swd();">Solution Web Developpement</a>
                                                 <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_scpvs();">SCPVS</a>
+                                                <div id="" class="row">
+                                                    <div class="col-md-12">
+                                                        <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
+                                                        <div class="well" style="border: slateblue solid 1px;">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <hr style="color: rgba(0, 101, 189, 1);" />
+                                                                    Pour joindre le service CRIDIP <span class="badge">Tapez 1</span>
+                                                                    <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
+                                                                </div>
+                                                                <div class="col-md-6"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div id="guides" class="tab-pane">
                                                 <p>Recent <code>.nav-tabs.nav-justified</code></p>
