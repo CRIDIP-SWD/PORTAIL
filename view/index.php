@@ -179,10 +179,10 @@ include ('inc/header.php');
                                 <div class="panel-body">
                                     <h6>Attachée à l'infrastructure <?= $travaux['infrastructure']; ?></h6>
                                     <hr>
-                                    <table>
+                                    <table style="width: 45%;">
                                         <tr>
-                                            <td>Type:</td>
-                                            <td>
+                                            <td style="width: 50%;">Type:</td>
+                                            <td style="width: 50%;">
                                                 <?php
                                                 switch($travaux['type_travaux'])
                                                 {
@@ -200,12 +200,12 @@ include ('inc/header.php');
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Service:</td>
-                                            <td><?= $travaux['service']; ?></td>
+                                            <td style="width: 50%;">Service:</td>
+                                            <td style="width: 50%;"><?= $travaux['service']; ?></td>
                                         </tr>
                                         <tr>
-                                            <td>Etat:</td>
-                                            <td>
+                                            <td style="width: 50%;">Etat:</td>
+                                            <td style="width: 50%;">
                                                 <?php
                                                 switch($travaux['etat_travaux'])
                                                 {
