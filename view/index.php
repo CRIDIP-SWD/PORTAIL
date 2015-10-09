@@ -415,7 +415,7 @@ include ('inc/header.php');
                                                 <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_cridip();">CRIDIP</a>
                                                 <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_swd();">Solution Web Developpement</a>
                                                 <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_scpvs();">SCPVS</a>
-                                                <div id="" class="row">
+                                                <div id="affiche_cridip" class="row">
                                                     <div class="col-md-12">
                                                         <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
@@ -492,6 +492,52 @@ include ('inc/header.php');
 <script src="<?= ROOT,ASSETS,JS; ?>tables/examples.datatables.row.with.details.js"></script>
 <script src="<?= ROOT,ASSETS,JS; ?>tables/examples.datatables.tabletools.js"></script>
 <script src="<?= ROOT,ASSETS,JS; ?>ui-elements/examples.modals.js"></script>
+<script type="text/javascript">
+    document.getElementById("affiche_cridip").style.display="none";
+    function affiche_cridip()
+    {
+        document.getElementById("affiche_cridip").style.display="block";
+    }
+    function affiche_swd()
+    {
+        document.getElementById("affiche_cridip").style.display="none";
+    }
+    function affiche_scpvs()
+    {
+        document.getElementById("affiche_cridip").style.display="none";
+    }
+</script>
+<script type="text/javascript">
+    document.getElementById("affiche_swd").style.display="none";
+    function affiche_cridip()
+    {
+        document.getElementById("affiche_swd").style.display="none";
+    }
+    function affiche_swd()
+    {
+        document.getElementById("affiche_swd").style.display="block";
+    }
+    function affiche_scpvs()
+    {
+        document.getElementById("affiche_swd").style.display="none";
+    }
+</script>
+<script type="text/javascript">
+    document.getElementById("affiche_scpvs").style.display="none";
+    function affiche_cridip()
+    {
+        document.getElementById("affiche_scpvs").style.display="none";
+    }
+    function affiche_swd()
+    {
+        document.getElementById("affiche_scpvs").style.display="none";
+    }
+    function affiche_scpvs()
+    {
+        document.getElementById("affiche_scpvs").style.display="block";
+    }
+</script>
+
 
 </body>
 </html>
