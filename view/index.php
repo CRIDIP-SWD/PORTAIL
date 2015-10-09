@@ -174,10 +174,73 @@ include ('inc/header.php');
                                         #<?= $idtravaux; ?> - <?= html_entity_decode($travaux['titre_travaux']); ?>
 
                                     </h2>
-                                    <span class="text-right">30/10/2015</span>
+                                    <span class="text-right">Tâche éditer le <?= date("d-m-Y à H:i", $travaux['date_travaux']); ?> </span>
                                 </header>
                                 <div class="panel-body">
-                                    Content.
+                                    <h6>Attachée à l'infrastructure <?= $travaux['infrastructure']; ?></h6>
+                                    <hr>
+                                    <table>
+                                        <tr>
+                                            <td>Type:</td>
+                                            <td>
+                                                <?php
+                                                switch($travaux['type_travaux'])
+                                                {
+                                                    case 1:
+                                                        echo "<span class='label label-warning'>Maintenance</span>";
+                                                        break;
+                                                    case 2:
+                                                        echo "<span class='label label-danger'>Incident</span>";
+                                                        break;
+                                                    case 3:
+                                                        echo "<span class='label label-info'>Amélioration</span>";
+                                                        break;
+                                                }
+                                                ?>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Service:</td>
+                                            <td><?= $travaux['service']; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Etat:</td>
+                                            <td>
+                                                <?php
+                                                switch($travaux['etat_travaux'])
+                                                {
+                                                    case 0:
+                                                        echo "<span class='label label-dark'><i class='fa fa-clock-o'></i> Programmer</span>";
+                                                        break;
+                                                    case 1:
+                                                        echo "<span class='label label-dark'><i class='fa fa-refresh fa-spin'></i> En cours...</span>";
+                                                        break;
+                                                    case 2:
+                                                        echo "<span class='label label-dark'><i class='fa fa-check-circle'></i> Terminer</span>";
+                                                        break;
+                                                }
+                                                ?>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <?php
+                                                switch($travaux['etat_travaux'])
+                                                {
+                                                    case 0:
+                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 60%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='33' role='progressbar' class='progress-bar progress-bar-danger'><span class='sr-only'>60%</span></div></div>";
+                                                        break;
+                                                    case 1:
+                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 60%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='66' role='progressbar' class='progress-bar progress-bar-warning'><span class='sr-only'>60%</span></div></div>";
+                                                        break;
+                                                    case 2:
+                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 60%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='100' role='progressbar' class='progress-bar progress-bar-success'><span class='sr-only'>60%</span></div></div>";
+                                                        break;
+                                                }
+                                                ?>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </section>
                         </div>
