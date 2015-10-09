@@ -228,13 +228,13 @@ include ('inc/header.php');
                                                 switch($travaux['etat_travaux'])
                                                 {
                                                     case 0:
-                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 60%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='33' role='progressbar' class='progress-bar progress-bar-danger'><span class='sr-only'>60%</span></div></div>";
+                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 33%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='33' role='progressbar' class='progress-bar progress-bar-danger'><span class='sr-only'>60%</span></div></div>";
                                                         break;
                                                     case 1:
-                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 60%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='66' role='progressbar' class='progress-bar progress-bar-warning'><span class='sr-only'>60%</span></div></div>";
+                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 66%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='66' role='progressbar' class='progress-bar progress-bar-warning'><span class='sr-only'>60%</span></div></div>";
                                                         break;
                                                     case 2:
-                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 60%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='100' role='progressbar' class='progress-bar progress-bar-success'><span class='sr-only'>60%</span></div></div>";
+                                                        echo "<div class='progress progress-striped progress-sm m-md light'><div style='width: 100%;' aria-valuemax='100' aria-valuemin='0' aria-valuenow='100' role='progressbar' class='progress-bar progress-bar-success'><span class='sr-only'>60%</span></div></div>";
                                                         break;
                                                 }
                                                 ?>
