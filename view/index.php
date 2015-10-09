@@ -65,8 +65,8 @@ include ('inc/header.php');
                                         <tr class="gradeX">
                                             <td>
                                                 <?php
-                                                $zone = $ovh->get("/vps/".$s_serveur['designation']);
-                                                var_dump($zone);
+                                                $vps = $ovh->get("/vps/");
+                                                var_dump($vps);
                                                 die();
                                                 ?>
                                             </td>
