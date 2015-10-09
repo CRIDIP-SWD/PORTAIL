@@ -45,7 +45,7 @@ include ('inc/header.php');
                                     <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                 </div>
 
-                                <h2 class="panel-title">SERVEUR</h2>
+                                <h2 class="panel-title">SERVEUR VPS</h2>
                             </header>
                             <div class="panel-body">
                                 <table class="table table-bordered table-striped mb-none" id="etat_service_serveur">
@@ -70,6 +70,80 @@ include ('inc/header.php');
                                             </td>
                                             <td><?= $s_serveur['designation']; ?></td>
                                         </tr>
+                                    <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php if(isset($_GET['sub']) && $_GET['sub'] == 'chantier'){ ?>
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="panel">
+                            <header class="panel-heading">
+                                <div class="panel-actions">
+                                    <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                                    <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                                </div>
+
+                                <h2 class="panel-title">TRAVAUX CRIDIP</h2>
+                            </header>
+                            <div class="panel-body">
+                                <table class="table table-bordered table-striped mb-none" id="chantier_cridip">
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Type</th>
+                                        <th>Service</th>
+                                        <th>Tache</th>
+                                        <th>Date d'ouverture</th>
+                                        <th>Etat</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                    $sql_travaux_cridip = mysql_query("SELECT * FROM p_travaux WHERE infrastructure = 'CRIDIP'")or die(mysql_error());
+                                    while($travaux_cridip = mysql_fetch_array($sql_travaux_cridip))
+                                    {
+                                    ?>
+                                        <td><?= $travaux_cridip['idtravaux']; ?></td>
+                                        <td>
+                                            <?php
+                                            switch($travaux_cridip['type_travaux'])
+                                            {
+                                                case 1:
+                                                    echo "<span class='label label-warning'>Maintenance</span>";
+                                                    break;
+                                                case 2:
+                                                    echo "<span class='label label-danger'>Incident</span>";
+                                                    break;
+                                                case 3:
+                                                    echo "<span class='label label-info'>Amélioration</span>";
+                                                    break;
+                                            }
+                                            ?>
+                                        </td>
+                                        <td><?= html_entity_decode($travaux_cridip['service']); ?></td>
+                                        <td><?= html_entity_decode($travaux_cridip['titre_travaux']); ?></td>
+                                        <td><?= date("d-m-Y H:i", $travaux_cridip['date_travaux']); ?></td>
+                                        <td>
+                                            <?php
+                                            switch($travaux_cridip['etat_travaux'])
+                                            {
+                                                case 0:
+                                                    echo "<span class='label label-dark'><i class='fa fa-clock-o'></i> Programmer</span>";
+                                                    break;
+                                                case 1:
+                                                    echo "<span class='label label-dark'><i class='fa fa-refresh fa-spin'></i> En cours...</span>";
+                                                    break;
+                                                case 2:
+                                                    echo "<span class='label label-dark'><i class='fa fa-check-circle'></i> Terminer</span>";
+                                                    break;
+                                            }
+                                            ?>
+                                        </td>
                                     <?php } ?>
                                     </tbody>
                                 </table>
