@@ -392,10 +392,18 @@ include ('inc/header.php');
                                                             </div>
                                                             <div class="item spaced">
                                                                 <div class="well bg-default text-center">
-                                                                    <i class="fa fa-road"></i><br>
+                                                                    <i class="fa fa-file"></i><br>
                                                                     <h2>GUIDE</h2>
                                                                     <p>A travers des guides complet, familiarisez-vous avec l'environnement de CRIDIP</p>
                                                                     <a class="btn btn-info">Accéder</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item spaced">
+                                                                <div class="well bg-default text-center">
+                                                                    <i class="fa fa-phone"></i><br>
+                                                                    <h2>CONTACT</h2>
+                                                                    <p>Un numéro pour tout les services</p>
+                                                                    <a class="btn btn-info">Découvrir</a>
                                                                 </div>
                                                             </div>
 
