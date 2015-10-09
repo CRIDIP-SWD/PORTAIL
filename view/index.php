@@ -297,7 +297,7 @@ include ('inc/header.php');
                                                     <div class="col-md-12">
                                                         <section class="panel panel-primary">
                                                             <div class="panel-body bg-info">
-                                                                <h1>Découvrez nos guides</h1>
+                                                                <h1 class="text-center">Découvrez nos guides</h1>
                                                                 <div class="row">
                                                                     <div class="col-md-4">
                                                                         <div class="well bg-dark">
@@ -355,7 +355,7 @@ include ('inc/header.php');
                                                                         <div class="well bg-dark">
                                                                             <div class="row">
                                                                                 <div class="col-md-6">
-                                                                                    <i class="fa fa-medkit" style="position: relative; left: 65px;"></i><br>
+                                                                                    <i class="fa fa-medkit fa-5x" style="position: relative; left: 65px;"></i><br>
                                                                                     <h3 class="text-center">SCPVS</h3>
                                                                                 </div>
                                                                                 <div class="col-md-6">
