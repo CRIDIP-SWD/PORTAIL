@@ -272,6 +272,77 @@ include ('inc/header.php');
                             </section>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <div class="tabs">
+                                        <ul class="nav nav-tabs nav-justified">
+                                            <li class="active">
+                                                <a href="#accueil" data-toggle="tab" class="text-center"> Accueil</a>
+                                            </li>
+                                            <li>
+                                                <a href="#contact" data-toggle="tab" class="text-center"> Contactez-nous</a>
+                                            </li>
+                                            <li>
+                                                <a href="#guides" data-toggle="tab" class="text-center"> Guides</a>
+                                            </li>
+                                            <li>
+                                                <a href="#roadmap" data-toggle="tab" class="text-center"> RoadMap</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="accueil" class="tab-pane active">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <section class="panel panel-primary">
+                                                            <div class="panel-body bg-info">
+                                                                <h1>Découvrez nos guides</h1>
+                                                                <div class="well">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <i class="fa fa-shopping-cart fa-5x"></i><br>
+                                                                            <h3 class="text-center">Commerce</h3>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <ul class="list-unstyled">
+                                                                                <li>
+                                                                                    <a href="">Gestion</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="">Comptabilité</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="">Ventes</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="contact" class="tab-pane">
+                                                <p>Recent <code>.nav-tabs.nav-justified</code></p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
+                                            </div>
+                                            <div id="guides" class="tab-pane">
+                                                <p>Recent <code>.nav-tabs.nav-justified</code></p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
+                                            </div>
+                                            <div id="roadmap" class="tab-pane">
+                                                <p>Recent <code>.nav-tabs.nav-justified</code></p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 <?php } ?>
             <?php } ?>
             <!-- end: page -->
