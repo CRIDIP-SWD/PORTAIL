@@ -66,7 +66,7 @@ include ('inc/header.php');
                                             <td>
                                                 <?php
                                                 $zone = $ovh->get("/vps/".$s_serveur['designation']);
-                                                echo $zone[0];
+                                                var_dump($zone);
                                                 die();
                                                 ?>
                                             </td>
