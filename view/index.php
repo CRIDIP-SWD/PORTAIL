@@ -419,6 +419,7 @@ include ('inc/header.php');
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
                                                                 <div class="col-md-6">
+                                                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>autre/num_cridip.png" class="img-responsive" />
                                                                     <hr style="color: rgba(0, 101, 189, 1);" />
                                                                     Pour joindre le service CRIDIP <span class="badge">Tapez 1</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
@@ -435,6 +436,7 @@ include ('inc/header.php');
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
                                                                 <div class="col-md-6">
+                                                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>autre/num_cridip.png" class="img-responsive" />
                                                                     <hr style="color: rgba(0, 101, 189, 1);" />
                                                                     Pour joindre le service CRIDIP <span class="badge">Tapez 2</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
@@ -451,6 +453,7 @@ include ('inc/header.php');
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
                                                                 <div class="col-md-6">
+                                                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>autre/num_cridip.png" class="img-responsive" />
                                                                     <hr style="color: rgba(0, 101, 189, 1);" />
                                                                     Pour joindre le service CRIDIP <span class="badge">Tapez 3</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
