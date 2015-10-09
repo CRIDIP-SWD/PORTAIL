@@ -298,24 +298,28 @@ include ('inc/header.php');
                                                         <section class="panel panel-primary">
                                                             <div class="panel-body bg-info">
                                                                 <h1>Découvrez nos guides</h1>
-                                                                <div class="well">
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <i class="fa fa-shopping-cart fa-5x"></i><br>
-                                                                            <h3 class="text-center">Commerce</h3>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <ul class="list-unstyled">
-                                                                                <li>
-                                                                                    <a href="">Gestion</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a href="">Comptabilité</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a href="">Ventes</a>
-                                                                                </li>
-                                                                            </ul>
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="well">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <i class="fa fa-shopping-cart fa-5x"></i><br>
+                                                                                    <h3 class="text-center">Commerce</h3>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <ul class="list-unstyled">
+                                                                                        <li>
+                                                                                            <a href="">Gestion</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Comptabilité</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Ventes</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
