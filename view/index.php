@@ -379,6 +379,11 @@ include ('inc/header.php');
                                                         </section>
                                                     </div>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div id="contact" class="tab-pane">
                                                 <p>Recent <code>.nav-tabs.nav-justified</code></p>
@@ -411,6 +416,8 @@ include ('inc/header.php');
 <link rel="stylesheet" href="<?= ROOT,ASSETS,VENDOR; ?>pnotify/pnotify.custom.css" />
 <link rel="stylesheet" href="<?= ROOT,ASSETS,VENDOR; ?>select2/select2.css" />
 <link rel="stylesheet" href="<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables-bs3/assets/css/datatables.css" />
+<link rel="stylesheet" href="<?= ROOT,ASSETS,VENDOR; ?>owl-carousel/owl.carousel.css" />
+<link rel="stylesheet" href="<?= ROOT,ASSETS,VENDOR; ?>owl-carousel/owl.theme.css" />
 <!-- Vendor -->
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery/jquery.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -426,6 +433,7 @@ include ('inc/header.php');
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables-bs3/assets/js/datatables.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>pnotify/pnotify.custom.js"></script>
+<script src="<?= ROOT,ASSETS,VENDOR; ?>owl-carousel/owl.carousel.js"></script>
 
 <!-- Theme Base, Components and Settings -->
 <script src="<?= ROOT,ASSETS,JS; ?>theme.js"></script>
