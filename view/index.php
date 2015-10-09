@@ -300,7 +300,7 @@ include ('inc/header.php');
                                                                 <h1>Découvrez nos guides</h1>
                                                                 <div class="row">
                                                                     <div class="col-md-4">
-                                                                        <div class="well">
+                                                                        <div class="well bg-dark">
                                                                             <div class="row">
                                                                                 <div class="col-md-6">
                                                                                     <i class="fa fa-shopping-cart fa-5x"></i><br>
