@@ -65,7 +65,7 @@ include ('inc/header.php');
                                         <tr class="gradeX">
                                             <td>
                                                 <?php
-                                                $zone = $ovh->get('\me');
+                                                $zone = $ovh->get("/me");
                                                 var_dump($zone);
                                                 die();
                                                 ?>
