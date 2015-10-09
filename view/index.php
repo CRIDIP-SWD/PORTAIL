@@ -72,7 +72,7 @@ include ('inc/header.php');
                                             <td><?= $s_serveur['designation']; ?></td>
                                             <td>
                                                 <?php
-                                                $etat = $ovh->get("/vps/".$s_serveur['designation']);
+                                                $etat = $ovh->get("/vps/".$s_serveur['designation']."/serviceInfos");
                                                 echo $etat['running'];
                                                 ?>
                                             </td>
