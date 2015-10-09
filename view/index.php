@@ -412,10 +412,7 @@ include ('inc/header.php');
                                                 </div>
                                             </div>
                                             <div id="contact" class="tab-pane">
-                                                <a data-appear-animation="fadeInUp" class="appear-animation text-center h2" style="text-decoration: none;" onclick="affiche_cridip();">CRIDIP</a>
-                                                <a data-appear-animation="fadeInUp" class="appear-animation text-center h2" style="text-decoration: none;" onclick="affiche_swd();">Solution Web Developpement</a>
-                                                <a data-appear-animation="fadeInUp" class="appear-animation text-center h2" style="text-decoration: none;" onclick="affiche_scpvs();">SCPVS</a>
-                                                <div id="affiche_cridip" class="row">
+                                                <div id="" class="row">
                                                     <div class="col-md-12">
                                                         <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
@@ -430,7 +427,7 @@ include ('inc/header.php');
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="affiche_swd" class="row">
+                                                <div id="" class="row">
                                                     <div class="col-md-12">
                                                         <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
@@ -445,7 +442,7 @@ include ('inc/header.php');
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="affiche_scpvs" class="row">
+                                                <div id="" class="row">
                                                     <div class="col-md-12">
                                                         <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
