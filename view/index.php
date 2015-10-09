@@ -258,17 +258,18 @@ include ('inc/header.php');
             <?php if(isset($_GET['sub']) && $_GET['sub'] == 'support_wiki'){ ?>
                 <?php if(!isset($_GET['action'])){ ?>
                     <div class="row">
-                        <div class="col-md-12 bg-primary">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1 class="text-success">Besoin d'aide ou d'information ?</h1>
-                                    <p class="text-muted">Trouvez toutes les réponses à vos questions
-                                        et échangez avec le support CRIDIP.</p>
+                        <div class="col-md-12">
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <div class="col-md-6">
+                                        <h1 class="text-primary">Besoin d'aide ou d'information ?</h1>
+                                        <p>Découvrez nos guides et discuter avec le support de SAS CRIDIP.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="<?= ROOT,ASSETS,IMAGES; ?>autre/support_slide.png" class="img-responsive" />
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>autre/support_slide.png" class="img-responsive"/>
-                                </div>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 <?php } ?>
