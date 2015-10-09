@@ -172,8 +172,9 @@ include ('inc/header.php');
 
                                     <h2 class="panel-title">
                                         #<?= $idtravaux; ?> - <?= html_entity_decode($travaux['titre_travaux']); ?>
-                                        <span class="text-right">30/10/2015</span>
+
                                     </h2>
+                                    <span class="text-right">30/10/2015</span>
                                 </header>
                                 <div class="panel-body">
                                     Content.
