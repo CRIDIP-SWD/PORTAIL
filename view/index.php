@@ -241,6 +241,9 @@ include ('inc/header.php');
                                             </td>
                                         </tr>
                                     </table>
+                                    <hr>
+                                    <strong>Détail</strong><br>
+                                    <p><?= html_entity_decode($travaux['detail_travaux']); ?></p>
                                 </div>
                             </section>
                         </div>
