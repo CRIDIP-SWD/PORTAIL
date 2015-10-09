@@ -163,7 +163,7 @@ include ('inc/header.php');
                     ?>
                     <div class="row">
                         <div class="col-md-offset-10"></div>
-                        <div class="col-md-12">
+                        <div class="col-md-2">
                             <button class="btn btn-dark" style="float: right;" onclick="history.back()"><i class="fa fa-arrow-circle-left"></i> RETOUR</button>
                         </div>
                     </div>
