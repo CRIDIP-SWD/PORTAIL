@@ -381,7 +381,22 @@ include ('inc/header.php');
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-
+                                                        <div class="owl-carousel" data-plugin-carousel data-plugin-options='{ "autoPlay": 3000, "items": 6, "itemsDesktop": [1199,4], "itemsDesktopSmall": [979,3], "itemsTablet": [768,2], "itemsMobile": [479,1] }'>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-1.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-2.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-3.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-4.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-5.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-6.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-7.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-1.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-2.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-3.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-4.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-5.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-6.jpg" alt=""></div>
+                                                            <div class="item spaced"><img class="img-thumbnail" src="assets/images/projects/project-7.jpg" alt=""></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
