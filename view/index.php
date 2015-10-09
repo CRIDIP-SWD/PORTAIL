@@ -53,7 +53,6 @@ include ('inc/header.php');
                                         <tr>
                                             <th>Zone</th>
                                             <th>Nom du Serveur</th>
-                                            <th>Etat</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -70,12 +69,6 @@ include ('inc/header.php');
                                                 ?>
                                             </td>
                                             <td><?= $s_serveur['designation']; ?></td>
-                                            <td>
-                                                <?php
-                                                $etat = $ovh->get("/vps/".$s_serveur['designation']);
-                                                echo $etat['state'];
-                                                ?>
-                                            </td>
                                         </tr>
                                     <?php } ?>
                                     </tbody>
