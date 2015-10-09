@@ -414,6 +414,7 @@ include ('inc/header.php');
                                             <div id="contact" class="tab-pane">
                                                 <div id="" class="row">
                                                     <div class="col-md-12">
+                                                        <h1 class="text-center">SAS CRIDIP</h1>
                                                         <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
@@ -429,12 +430,13 @@ include ('inc/header.php');
                                                 </div>
                                                 <div id="" class="row">
                                                     <div class="col-md-12">
+                                                        <h1 class="text-center">SWD (Service Web Developpement)</h1>
                                                         <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
                                                                 <div class="col-md-6">
                                                                     <hr style="color: rgba(0, 101, 189, 1);" />
-                                                                    Pour joindre le service CRIDIP <span class="badge">Tapez 1</span>
+                                                                    Pour joindre le service CRIDIP <span class="badge">Tapez 2</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
                                                                 </div>
                                                                 <div class="col-md-6"></div>
@@ -444,12 +446,13 @@ include ('inc/header.php');
                                                 </div>
                                                 <div id="" class="row">
                                                     <div class="col-md-12">
+                                                        <h1 class="text-center">SCPVS</h1>
                                                         <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
                                                                 <div class="col-md-6">
                                                                     <hr style="color: rgba(0, 101, 189, 1);" />
-                                                                    Pour joindre le service CRIDIP <span class="badge">Tapez 1</span>
+                                                                    Pour joindre le service CRIDIP <span class="badge">Tapez 3</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
                                                                 </div>
                                                                 <div class="col-md-6"></div>
