@@ -65,16 +65,15 @@ include ('inc/header.php');
                                         <tr class="gradeX">
                                             <td>
                                                 <?php
-                                                $vps = $ovh->get("/vps/vps116895.ovh.net");
-                                                var_dump($vps);
-                                                die();
+                                                $vps = $ovh->get("/vps/".$s_serveur['designation']);
+                                                echo $vps['zone'];
                                                 ?>
                                             </td>
                                             <td><?= $s_serveur['designation']; ?></td>
                                             <td>
                                                 <?php
                                                 $etat = $ovh->get("/vps/".$s_serveur['designation']);
-                                                print_r($etat['running']);
+                                                echo $etat['running'];
                                                 ?>
                                             </td>
                                         </tr>
