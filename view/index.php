@@ -62,7 +62,7 @@ include ('inc/header.php');
                                     while($s_serveur = mysql_fetch_array($sql_service_serveur))
                                     {
                                     ?>
-                                        <tr class="gradeX">
+                                        <tr class="<?php $etat = $ovh->get("/vps/".$s_serveur['designation']); if($etat['state'] == 'running'){echo 'success';}elseif($etat['state'] == 'stopping'){echo 'danger';}else{echo 'primary';} ?>">
                                             <td>
                                                 <?php
                                                 $vps = $ovh->get("/vps/".$s_serveur['designation']);
