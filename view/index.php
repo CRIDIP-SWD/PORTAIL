@@ -494,10 +494,10 @@ include ('inc/header.php');
 <script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-placeholder/jquery.placeholder.js"></script>
 
 <!-- Specific Page Vendor -->
-<script src=<?= ROOT,ASSETS,VENDOR; ?>select2/select2.js"></script>
-<script src=<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables/media/js/jquery.dataTables.js"></script>
-<script src=<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
-<script src=<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables-bs3/assets/js/datatables.js"></script>
+<script src="<?= ROOT,ASSETS,VENDOR; ?>select2/select2.js"></script>
+<script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables/media/js/jquery.dataTables.js"></script>
+<script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+<script src="<?= ROOT,ASSETS,VENDOR; ?>jquery-datatables-bs3/assets/js/datatables.js"></script>
 <script src="<?= ROOT,ASSETS,VENDOR; ?>pnotify/pnotify.custom.js"></script>
 
 <!-- Theme Base, Components and Settings -->
