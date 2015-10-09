@@ -412,9 +412,9 @@ include ('inc/header.php');
                                                 </div>
                                             </div>
                                             <div id="contact" class="tab-pane">
-                                                <a style="text-decoration: none;" onclick="affiche_cridip();">CRIDIP</a>
-                                                <a style="text-decoration: none;" onclick="affiche_swd();">Solution Web Developpement</a>
-                                                <a style="text-decoration: none;" onclick="affiche_scpvs();">SCPVS</a>
+                                                <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_cridip();">CRIDIP</a>
+                                                <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_swd();">Solution Web Developpement</a>
+                                                <a data-appear-animation="fadeInUp" style="text-decoration: none;" onclick="affiche_scpvs();">SCPVS</a>
                                             </div>
                                             <div id="guides" class="tab-pane">
                                                 <p>Recent <code>.nav-tabs.nav-justified</code></p>
