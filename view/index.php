@@ -162,8 +162,7 @@ include ('inc/header.php');
                     $travaux = mysql_fetch_array($sql_travaux);
                     ?>
                     <div class="row">
-                        <div class="col-md-offset-10"></div>
-                        <div class="col-md-2">
+                        <div class="col-md-12">
                             <button class="btn btn-dark" style="float: right;" onclick="history.back()"><i class="fa fa-arrow-circle-left"></i> RETOUR</button>
                         </div>
                     </div>
