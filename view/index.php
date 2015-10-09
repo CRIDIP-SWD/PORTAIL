@@ -108,42 +108,44 @@ include ('inc/header.php');
                                     while($travaux_cridip = mysql_fetch_array($sql_travaux_cridip))
                                     {
                                     ?>
-                                        <td><?= $travaux_cridip['idtravaux']; ?></td>
-                                        <td>
-                                            <?php
-                                            switch($travaux_cridip['type_travaux'])
-                                            {
-                                                case 1:
-                                                    echo "<span class='label label-warning'>Maintenance</span>";
-                                                    break;
-                                                case 2:
-                                                    echo "<span class='label label-danger'>Incident</span>";
-                                                    break;
-                                                case 3:
-                                                    echo "<span class='label label-info'>Amélioration</span>";
-                                                    break;
-                                            }
-                                            ?>
-                                        </td>
-                                        <td><?= html_entity_decode($travaux_cridip['service']); ?></td>
-                                        <td><?= html_entity_decode($travaux_cridip['titre_travaux']); ?></td>
-                                        <td><?= date("d-m-Y H:i", $travaux_cridip['date_travaux']); ?></td>
-                                        <td>
-                                            <?php
-                                            switch($travaux_cridip['etat_travaux'])
-                                            {
-                                                case 0:
-                                                    echo "<span class='label label-dark'><i class='fa fa-clock-o'></i> Programmer</span>";
-                                                    break;
-                                                case 1:
-                                                    echo "<span class='label label-dark'><i class='fa fa-refresh fa-spin'></i> En cours...</span>";
-                                                    break;
-                                                case 2:
-                                                    echo "<span class='label label-dark'><i class='fa fa-check-circle'></i> Terminer</span>";
-                                                    break;
-                                            }
-                                            ?>
-                                        </td>
+                                        <tr onclick="window.location.href='index.php?view=index&sub=chantier&action=view&idtravaux=<?= $travaux_cridip['idtravaux']; ?>'" style="cursor: pointer;">
+                                            <td><?= $travaux_cridip['idtravaux']; ?></td>
+                                            <td>
+                                                <?php
+                                                switch($travaux_cridip['type_travaux'])
+                                                {
+                                                    case 1:
+                                                        echo "<span class='label label-warning'>Maintenance</span>";
+                                                        break;
+                                                    case 2:
+                                                        echo "<span class='label label-danger'>Incident</span>";
+                                                        break;
+                                                    case 3:
+                                                        echo "<span class='label label-info'>Amélioration</span>";
+                                                        break;
+                                                }
+                                                ?>
+                                            </td>
+                                            <td><?= html_entity_decode($travaux_cridip['service']); ?></td>
+                                            <td><?= html_entity_decode($travaux_cridip['titre_travaux']); ?></td>
+                                            <td><?= date("d-m-Y H:i", $travaux_cridip['date_travaux']); ?></td>
+                                            <td>
+                                                <?php
+                                                switch($travaux_cridip['etat_travaux'])
+                                                {
+                                                    case 0:
+                                                        echo "<span class='label label-dark'><i class='fa fa-clock-o'></i> Programmer</span>";
+                                                        break;
+                                                    case 1:
+                                                        echo "<span class='label label-dark'><i class='fa fa-refresh fa-spin'></i> En cours...</span>";
+                                                        break;
+                                                    case 2:
+                                                        echo "<span class='label label-dark'><i class='fa fa-check-circle'></i> Terminer</span>";
+                                                        break;
+                                                }
+                                                ?>
+                                            </td>
+                                        </tr>
                                     <?php } ?>
                                     </tbody>
                                 </table>
