@@ -303,7 +303,7 @@ include ('inc/header.php');
                                                                         <div class="well bg-dark">
                                                                             <div class="row">
                                                                                 <div class="col-md-6">
-                                                                                    <i class="fa fa-shopping-cart fa-5x text-center"></i><br>
+                                                                                    <i class="fa fa-shopping-cart fa-5x" style="position: relative; left: 65px;"></i><br>
                                                                                     <h3 class="text-center">Commerce</h3>
                                                                                 </div>
                                                                                 <div class="col-md-6">
@@ -316,6 +316,58 @@ include ('inc/header.php');
                                                                                         </li>
                                                                                         <li>
                                                                                             <a href="">Ventes</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="well bg-dark">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <i class="fa fa-code fa-5x" style="position: relative; left: 65px;"></i><br>
+                                                                                    <h3 class="text-center">WEB</h3>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <ul class="list-unstyled">
+                                                                                        <li>
+                                                                                            <a href="">Domaine</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Serveur</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Téléphonie</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Infogérance</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Projet</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="well bg-dark">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <i class="fa fa-medkit" style="position: relative; left: 65px;"></i><br>
+                                                                                    <h3 class="text-center">SCPVS</h3>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <ul class="list-unstyled">
+                                                                                        <li>
+                                                                                            <a href="">Association</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Coaching</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="">Rendez-vous</a>
                                                                                         </li>
                                                                                     </ul>
                                                                                 </div>
