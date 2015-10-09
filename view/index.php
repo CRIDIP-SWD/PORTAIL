@@ -63,7 +63,19 @@ include ('inc/header.php');
                                     {
                                     ?>
                                         <tr class="gradeX">
-                                            <td> </td>
+                                            <td>
+                                                <?php
+                                                $zone = $ovh->get("/vps/".$s_serveur['designation']);
+                                                print_r($zone['zone']);
+                                                ?>
+                                            </td>
+                                            <td><?= $s_serveur['designation']; ?></td>
+                                            <td>
+                                                <?php
+                                                $etat = $ovh->get("/vps/".$s_serveur['designation']);
+                                                print_r($etat['running']);
+                                                ?>
+                                            </td>
                                         </tr>
                                     <?php } ?>
                                     </tbody>
