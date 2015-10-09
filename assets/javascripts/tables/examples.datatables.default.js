@@ -10,7 +10,11 @@ Theme Version: 	1.4.1
 
 	var datatableInit = function() {
 
-		$('#datatable-default').dataTable();
+		$('#datatable-default').dataTable({
+			"language": {
+				"url": "//cdn.datatables.net/plug-ins/1.10.9/i18n/French.json"
+			}
+		});
 
 	};
 
