@@ -2,10 +2,10 @@
 require_once "vendor/autoload.php";
 
 use Ovh\Api;
-$apk = "vXjHPaL84Jct1zaB";
+$apk = "YLVnWI9vwB5nYEg0";
 $endpoint = "ovh-eu";
-$ask = "WwSivyMF8kcmKMlsjd6SRCQsmox8XKnO";
-$csk = "k1ung5OPmvb26KtO97wy6R85SyL2ZIVU";
+$ask = "bDPjuf931jLDmhMMbTLSfatartv43rzB";
+$csk = "is8M5oyHUJNR7UfxB5ToF6wQWAcMPfxn";
 $ovh = new Api($apk,$ask,$endpoint,$csk);
 
 require_once "control/client.php";
