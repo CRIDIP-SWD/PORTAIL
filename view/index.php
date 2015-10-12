@@ -465,12 +465,10 @@ include ('inc/header.php');
                                                 </div>
                                             </div>
                                             <div id="guides" class="tab-pane">
-                                                <p>Recent <code>.nav-tabs.nav-justified</code></p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
+                                                <h1>EN CONSTRUCTION...</h1>
                                             </div>
                                             <div id="roadmap" class="tab-pane">
-                                                <p>Recent <code>.nav-tabs.nav-justified</code></p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
+                                                <h1>EN CONSTRUCTION...</h1>
                                             </div>
                                         </div>
                                     </div>
