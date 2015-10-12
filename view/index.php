@@ -432,13 +432,13 @@ include ('inc/header.php');
                                                 <div id="" class="row">
                                                     <div class="col-md-12">
                                                         <h1 class="text-center">SWD (Service Web Developpement)</h1>
-                                                        <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
+                                                        <p class="text-center"><i>Besoin d'une expertise Web ou Réseau ?<br>Le secteur Solution Web Developpement est à votre écoute.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
                                                                 <div class="col-md-6">
                                                                     <img src="<?= ROOT,ASSETS,IMAGES; ?>autre/num_cridip.png" class="img-responsive" />
                                                                     <hr style="color: rgba(0, 101, 189, 1);" />
-                                                                    Pour joindre le service CRIDIP <span class="badge">Tapez 2</span>
+                                                                    Pour joindre le service Solution Web Développement <span class="badge">Tapez 2</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
                                                                 </div>
                                                                 <div class="col-md-6"></div>
@@ -449,13 +449,13 @@ include ('inc/header.php');
                                                 <div id="" class="row">
                                                     <div class="col-md-12">
                                                         <h1 class="text-center">SCPVS</h1>
-                                                        <p class="text-center"><i>Besoin d'aide dans la gestion de votre société ?<br>La société CRIDIP vous aide à gérer le quotidien de votre entreprise.</i></p>
+                                                        <p class="text-center"><i>Solution Chirurgie Pathologie Vital Santé ?<br>Association de lutte contre l'obésité.</i></p>
                                                         <div class="well" style="border: slateblue solid 1px;">
                                                             <div class="row">
                                                                 <div class="col-md-6">
                                                                     <img src="<?= ROOT,ASSETS,IMAGES; ?>autre/num_cridip.png" class="img-responsive" />
                                                                     <hr style="color: rgba(0, 101, 189, 1);" />
-                                                                    Pour joindre le service CRIDIP <span class="badge">Tapez 3</span>
+                                                                    Pour joindre le service SCPVS <span class="badge">Tapez 3</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
                                                                 </div>
                                                                 <div class="col-md-6"></div>
