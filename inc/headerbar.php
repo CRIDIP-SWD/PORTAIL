@@ -86,11 +86,11 @@
             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                 <li class="dropdown-header text-center">Votre Compte</li>
                 <li>
-                    <a href="page_ready_user_profile.html">
+                    <a href="index.php?view=index&sub=profil">
                         <i class="fa fa-user fa-fw pull-right"></i>
-                        Profile
+                        Vos Informations
                     </a>
-                    <a href="login.html"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
+                    <a href="<?= ROOT,CONTROL; ?>client.php?action=deconnexion"><i class="fa fa-ban fa-fw pull-right"></i> Déconnexion</a>
                 </li>
             </ul>
         </li>
