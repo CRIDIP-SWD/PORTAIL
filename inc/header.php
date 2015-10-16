@@ -47,6 +47,7 @@ include "classe.php";
     <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>main.css">
 
     <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+    <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>themes/modern.css">
 
     <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
     <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>themes.css">
