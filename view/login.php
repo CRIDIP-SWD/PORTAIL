@@ -120,7 +120,7 @@
 <script type="text/javascript" src="<?= ROOT,ASSETS,JS; ?>modify.js"></script>
 <?php if(isset($_GET['error']) && $_GET['error'] == 'user'){ ?>
     <script type="text/javascript">
-        toastr.error("Le nom d'utilisateur ou le mot de passe sont erroné", "CONNEXION IMPOSSIBLE",{
+        toastr.error("Le nom d'utilisateur ou le mot de passe sont erronÃ©", "CONNEXION IMPOSSIBLE",{
             positionClass: "toast-top-full-width",
             timeOut: "10000"
         });
@@ -128,7 +128,7 @@
 <?php } ?>
 <?php if(isset($_GET['error']) && $_GET['error'] == 'multi-user'){ ?>
     <script type="text/javascript">
-        toastr.error("Erreur critique dans la base de donnée.<br>Contacteé l'administrateur système.", "CONNEXION IMPOSSIBLE",{
+        toastr.error("Erreur critique dans la base de donnÃ©e.<br>ContacteÃ© l'administrateur systÃ¨me.", "CONNEXION IMPOSSIBLE",{
             positionClass: "toast-top-full-width",
             timeOut: "10000"
         });
