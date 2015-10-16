@@ -4,6 +4,7 @@ include "config.php";
 if(!isset($_SESSION['login'])){
     header("Location: index.php?view=login");
 }
+$login = $_SESSION['login'];
 include "classe.php";
 ?>
 <!DOCTYPE html>
