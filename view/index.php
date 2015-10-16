@@ -53,8 +53,8 @@
 
             <!-- Page content -->
             <div id="page-content">
-                <h1>BIENVENUE SUR VOTRE ESPACE CLIENT</h1>
-                <h3><span class="text-muted">Veuillez selectionner un Etablissement afin d'avoir accès à l'espace dédié</span></h3>
+                <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT</h1>
+                <h3 class="text-center"><span class="text-muted">Veuillez selectionner un Etablissement afin d'avoir accès à l'espace dédié</span></h3>
             </div>
             <!-- END Page Content -->
 
