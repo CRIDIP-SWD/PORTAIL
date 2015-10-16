@@ -79,7 +79,7 @@
                 <li>
                     <a href="">
                         <i class="fa fa-cloud-upload"></i>
-                        <span>Mise à jour</span>
+                        <span>Mise Ã  jour</span>
                     </a>
                 </li>
             </ul>
