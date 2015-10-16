@@ -69,8 +69,6 @@
                         <i class="fa fa-server"></i>
                         <span>Etat des Services</span>
                     </a>
-                </li>
-                <li>
                     <a href="">
                         <i class="fa fa-wrench"></i>
                         <span>Travaux</span>
@@ -83,10 +81,10 @@
         <!-- User Dropdown -->
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
+                <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
-                <li class="dropdown-header text-center">Account</li>
+                <li class="dropdown-header text-center">Votre Compte</li>
                 <li>
                     <a href="page_ready_timeline.html">
                         <i class="fa fa-clock-o fa-fw pull-right"></i>
