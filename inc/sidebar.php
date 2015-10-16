@@ -5,20 +5,20 @@
         <!-- Sidebar Content -->
         <div class="sidebar-content">
             <!-- Brand -->
-            <a href="index.html" class="sidebar-brand">
+            <a href="index.php?view=index" class="sidebar-brand">
                 <i class="gi gi-flash"></i>
-                <span class="sidebar-nav-mini-hide"><strong>Pro</strong>UI</span>
+                <span class="sidebar-nav-mini-hide"><strong>ESPACE</strong> CLIENT</span>
             </a>
             <!-- END Brand -->
 
             <!-- User Info -->
             <div class="sidebar-section sidebar-user clearfix sidebar-nav-mini-hide">
                 <div class="sidebar-user-avatar">
-                    <a href="page_ready_user_profile.html">
-                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar">
+                    <a href="index.php?view=index&sub=profil">
+                        <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" alt="avatar">
                     </a>
                 </div>
-                <div class="sidebar-user-name">John Doe</div>
+                <div class="sidebar-user-name"><?= $client['nom_client']; ?><br><h6><span class="text-muted"><?= $client['nom_societe']; ?></span></h6></div>
                 <div class="sidebar-user-links">
                     <a href="page_ready_user_profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
                     <a href="page_ready_inbox.html" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
