@@ -11,7 +11,6 @@ class ovh_wrapper
 
     public function list_serveur()
     {
-        use Ovh\Api;
         $apk = "YLVnWI9vwB5nYEg0";
         $endpoint = "ovh-eu";
         $ask = "bDPjuf931jLDmhMMbTLSfatartv43rzB";
