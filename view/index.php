@@ -95,6 +95,15 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
+                                $sql_server = mysql_query("SELECT * FROM p_service WHERE type_service = 'server'")or die(mysql_error());
+                                while($server = mysql_fetch_array($sql_server)){
+                                    $ovh_stat_server = $ovh->get("/vps/".$server['designation']);
+                                ?>
+                                    <tr class="<?php if($ovh_stat_server['state'] == 'running'){echo "success";}else{echo "danger";} ?>">
+                                        <td><?= $server['designation']; ?></td>
+                                    </tr>
+                                <?php } ?>
                                 </tbody>
                             </table>
                         </div>
