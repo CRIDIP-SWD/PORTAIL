@@ -47,10 +47,10 @@
             </ul>
         </li>
         <li>
-            <a href="">SAS CRIDIP</a>
+            <a href="">GENERAL</a>
         </li>
         <li>
-            <a href="">SWD <h6><i>(Solution Web Developpement)</i></h6></a>
+            <a href="">DEVELOPPEMENT & TECHNOLOGIER</a>
         </li>
         <li>
             <a href="">SCPVS</a>
