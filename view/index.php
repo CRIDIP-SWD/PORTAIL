@@ -68,7 +68,7 @@
                     <div class="block">
                         <!-- Row Styles Title -->
                         <div class="block-title">
-                            <h2>HEBERGEUR ET REGISTAR</h2>
+                            <h2>ETAT DES SERVICE</h2>
                         </div>
                         <!-- END Row Styles Title -->
 
@@ -76,14 +76,28 @@
                         <div class="table-responsive">
                             <table class="table table-vcenter">
                                 <thead>
-                                    <tr>
-                                        <th>Nom</th>
-                                    </tr>
+                                <tr>
+                                    <th>Nom</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="<?php if($ovh->get('/me')){echo "success";}else{echo "danger";} ?>">
-                                        <td>OVH</td>
-                                    </tr>
+                                <tr class="<?php if($ovh->get('/me')){echo "success";}else{echo "danger";} ?>">
+                                    <td>OVH</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-vcenter">
+                                <thead>
+                                <tr>
+                                    <th>Serveur</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="">
+                                    <td>VPS116895</td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
