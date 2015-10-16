@@ -116,6 +116,31 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/app.js"></script>
+<script type="text/javascript" src="<?= ROOT,ASSETS,JS; ?>modify.js"></script>
+<?php if(isset($_GET['error']) && $_GET['error'] == 'user'){ ?>
+    <script type="text/javascript">
+        toastr.error("Le nom d'utilisateur ou le mot de passe sont erroné", "CONNEXION IMPOSSIBLE",{
+            positionClass: "toast-top-full-width",
+            timeOut: "10000"
+        });
+    </script>
+<?php } ?>
+<?php if(isset($_GET['error']) && $_GET['error'] == 'multi-user'){ ?>
+    <script type="text/javascript">
+        toastr.error("Erreur critique dans la base de donnée.<br>Contacteé l'administrateur système.", "CONNEXION IMPOSSIBLE",{
+            positionClass: "toast-top-full-width",
+            timeOut: "10000"
+        });
+    </script>
+<?php } ?>
+<?php if(isset($_GET['error']) && $_GET['error'] == 'champs'){ ?>
+    <script type="text/javascript">
+        toastr.warning("Un ou plusieurs champs ne sont pas remplie", "CONNEXION IMPOSSIBLE",{
+            positionClass: "toast-top-full-width",
+            timeOut: "10000"
+        });
+    </script>
+<?php } ?>
 
 <!-- Load and execute javascript code used only in this page -->
 <script src="js/pages/login.js"></script>
