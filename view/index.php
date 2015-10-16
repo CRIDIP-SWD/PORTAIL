@@ -53,9 +53,15 @@
 
             <!-- Page content -->
             <div id="page-content">
-                <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT</h1>
-                <h3 class="text-center"><span class="text-muted">Veuillez selectionner un Etablissement afin d'avoir accès à l'espace dédié</span></h3>
-                <span class="arrow vtl"></span>
+                <div class="row">
+                    <div class="col-md-2">
+                        <span class="arrow hlt"></span>
+                    </div>
+                    <div class="col-md-10">
+                        <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT</h1>
+                        <h3 class="text-center text-muted">Veuillez selectionner un onglet afin de choisir l'espace concerner.</h3>
+                    </div>
+                </div>
             </div>
             <!-- END Page Content -->
 
