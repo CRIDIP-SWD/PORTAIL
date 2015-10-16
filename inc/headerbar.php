@@ -49,6 +49,12 @@
         <li>
             <a href="">SAS CRIDIP</a>
         </li>
+        <li>
+            <a href="">SWD <h6><i>(Solution Web Developpement)</i></h6></a>
+        </li>
+        <li>
+            <a href="">SCPVS</a>
+        </li>
         <!-- END Template Options -->
     </ul>
     <!-- END Left Header Navigation -->
