@@ -61,7 +61,7 @@
         <!-- Alternative Sidebar Toggle Button -->
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                Assistance <i class="fa fa-arrow-down"></i>
+                Assistance <i class="fa fa-angle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-custom dropdown-options">
                 <li>
