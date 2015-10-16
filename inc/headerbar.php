@@ -65,7 +65,10 @@
             </a>
             <ul class="dropdown-menu dropdown-custom dropdown-options">
                 <li>
-                    <i class=""
+                    <a href="">
+                        <i class="fa fa-server"></i>
+                        <span>Etat des Services</span>
+                    </a>
                 </li>
             </ul>
         </li>
