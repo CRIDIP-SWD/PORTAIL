@@ -16,41 +16,41 @@
 
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
-    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
-    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
-    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="img/icon180.png" sizes="180x180">
+    <link rel="shortcut icon" href="<?= ROOT,ASSETS,IMAGES; ?>favicon.png">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="<?= ROOT,ASSETS,IMAGES; ?>icon180.png" sizes="180x180">
     <!-- END Icons -->
 
     <!-- Stylesheets -->
     <!-- Bootstrap is included in its original form, unaltered -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>bootstrap.min.css">
 
     <!-- Related styles of various icon packs and plugins -->
-    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>plugins.css">
 
     <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>main.css">
 
     <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
 
     <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
-    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>themes.css">
     <!-- END Stylesheets -->
 
     <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
-    <script src="js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
+    <script src="<?= ROOT,ASSETS,JS,VENDOR; ?>modernizr-2.7.1-respond-1.4.2.min.js"></script>
 </head>
 <body>
 <!-- Login Background -->
 <div id="login-background">
     <!-- For best results use an image with a resolution of 2560x400 pixels (prefer a blurred image for smaller file size) -->
-    <img src="img/placeholders/headers/login_header.jpg" alt="Login Background" class="animation-pulseSlow">
+    <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/headers/login_header.jpg" alt="Login Background" class="animation-pulseSlow">
 </div>
 <!-- END Login Background -->
 
