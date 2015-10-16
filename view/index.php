@@ -77,12 +77,15 @@
                             <table class="table table-vcenter">
                                 <thead>
                                 <tr>
-                                    <th>Nom</th>
+                                    <th>SERVICE</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr class="<?php if($ovh->get('/me')){echo "success";}else{echo "danger";} ?>">
                                     <td>OVH</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
                                 </tr>
                                 </tbody>
                             </table>
