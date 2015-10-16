@@ -33,6 +33,7 @@
 
     <!-- Related styles of various icon packs and plugins -->
     <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>plugins.css">
+    <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>modify.css">
 
     <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
     <link rel="stylesheet" href="<?= ROOT,ASSETS,CSS; ?>main.css">
