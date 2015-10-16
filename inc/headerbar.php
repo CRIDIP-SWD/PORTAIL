@@ -76,12 +76,6 @@
                         <span>Travaux</span>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <i class="fa fa-cloud-upload"></i>
-                        <span>Mise à jour</span>
-                    </a>
-                </li>
             </ul>
         </li>
         <!-- END Alternative Sidebar Toggle Button -->
