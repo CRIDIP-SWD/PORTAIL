@@ -81,7 +81,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="">
+                                <tr class="<?php if($ovh->get('/me')){echo "success";}else{echo "danger";} ?>">
                                     <td>OVH</td>
                                 </tr>
                                 </tbody>
@@ -95,13 +95,6 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php
-                                while($vps = $ovh->get("/vps")){
-                                ?>
-                                    <tr>
-                                        <td><?= $vps; ?></td>
-                                    </tr>
-                                <?php } ?>
                                 </tbody>
                             </table>
                         </div>
