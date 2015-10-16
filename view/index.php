@@ -95,9 +95,13 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="">
-                                    <td>VPS116895</td>
-                                </tr>
+                                <?php
+                                while($vps = $ovh->list_serveur()){
+                                ?>
+                                    <tr>
+                                        <td><?= $vps; ?></td>
+                                    </tr>
+                                <?php } ?>
                                 </tbody>
                             </table>
                         </div>
