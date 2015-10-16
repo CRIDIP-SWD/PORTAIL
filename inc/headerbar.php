@@ -50,7 +50,7 @@
             <a href="">GENERAL</a>
         </li>
         <li>
-            <a href="">DEVELOPPEMENT & TECHNOLOGIER</a>
+            <a href="">DEVELOPPEMENT & TECHNOLOGIE</a>
         </li>
         <li>
             <a href="">SCPVS</a>
