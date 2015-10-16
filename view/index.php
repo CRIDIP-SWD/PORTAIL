@@ -424,7 +424,9 @@ include ('inc/header.php');
                                                                     Pour joindre le service CRIDIP <span class="badge">Tapez 1</span>
                                                                     <h6 class="text-muted">Temps d'attente estimé: < 10 minutes</h6>
                                                                 </div>
-                                                                <div class="col-md-6"></div>
+                                                                <div class="col-md-6">
+
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
