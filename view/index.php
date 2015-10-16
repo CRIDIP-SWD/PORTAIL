@@ -81,7 +81,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="<?php if($ovh->get('/me')){echo "success";}else{echo "danger";} ?>">
+                                <tr class="">
                                     <td>OVH</td>
                                 </tr>
                                 </tbody>
