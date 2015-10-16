@@ -55,7 +55,7 @@
             <div id="page-content">
                 <div class="row">
                     <div class="col-md-2">
-                        <span class="arrow hlt"></span>
+                        <span class="arrow vtr" style="position: relative; top: 30px; left: 300px"></span>
                     </div>
                     <div class="col-md-10">
                         <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT</h1>
