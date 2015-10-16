@@ -53,15 +53,43 @@
 
             <!-- Page content -->
             <div id="page-content">
-                <div class="row">
-                    <div class="col-md-2">
-                        <span class="arrow vtr" style="position: relative; top: 30px; left: 300px"></span>
+                <?php if(!isset($_GET['sub'])){ ?>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="arrow vtr" style="position: relative; top: 30px; left: 200px"></span>
+                        </div>
+                        <div class="col-md-10">
+                            <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT</h1>
+                            <h3 class="text-center text-muted">Veuillez selectionner un onglet afin de choisir l'espace concerner.</h3>
+                        </div>
                     </div>
-                    <div class="col-md-10">
-                        <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT</h1>
-                        <h3 class="text-center text-muted">Veuillez selectionner un onglet afin de choisir l'espace concerner.</h3>
+                <?php } ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'etat_service'){ ?>
+                    <div class="block">
+                        <!-- Row Styles Title -->
+                        <div class="block-title">
+                            <h2>HEBERGEUR ET REGISTAR</h2>
+                        </div>
+                        <!-- END Row Styles Title -->
+
+                        <!-- Row Styles Content -->
+                        <div class="table-responsive">
+                            <table class="table table-vcenter">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="<?php if($ovh->get('/me')){echo "success";}else{echo "danger";} ?>">
+                                        <td>OVH</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- END Row Styles Content -->
                     </div>
-                </div>
+                <?php } ?>
             </div>
             <!-- END Page Content -->
 
