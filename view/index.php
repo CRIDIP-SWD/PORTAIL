@@ -96,7 +96,7 @@
                                 </thead>
                                 <tbody>
                                 <?php
-                                while($vps = $ovh->list_serveur()){
+                                while($vps = $ovh->get("/vps")){
                                 ?>
                                     <tr>
                                         <td><?= $vps; ?></td>
