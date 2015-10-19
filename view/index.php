@@ -184,6 +184,29 @@
                         </div>
                     </div>
                 <?php } ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'view-travaux'){ ?>
+                    <?php
+                    $idtravaux = $_GET['idtravaux'];
+                    $sql_travaux = mysql_query("SELECT * FROM p_travaux WHERE idtravaux = '$idtravaux'")or die(mysql_error());
+                    $travaux = mysql_fetch_array($sql_travaux);
+                    ?>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="block">
+                                <!-- Block Title -->
+                                <div class="block-title">
+                                    <h2>Ticket: #<?= $travaux['idtravaux']; ?> - <strong><?= html_entity_decode($travaux['titre_travaux']); ?></strong></h2>
+                                </div>
+                                <table class="table">
+                                    <tr>
+                                        <td style="width: 50%; font-weight: bold;">Infrastructure:</td>
+                                        <td style="width: 50%;"><?= $travaux['infrastructure']; ?></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
             <!-- END Page Content -->
 
