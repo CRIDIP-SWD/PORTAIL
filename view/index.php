@@ -282,7 +282,7 @@
                                         </li>
                                         <?php } ?>
                                         <?php
-                                        $sql_social = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial ASC LIMIT 2, 999")or die(mysql_error());
+                                        $sql_social = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial ASC LIMIT 1, 999")or die(mysql_error());
                                         while($social = mysql_fetch_array($sql_social))
                                         {
                                         ?>
