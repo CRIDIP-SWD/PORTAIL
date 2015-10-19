@@ -94,7 +94,7 @@
                             <table class="table table-vcenter">
                                 <thead>
                                 <tr>
-                                    <th>Serveur</th>
+                                    <th>SERVEUR</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -113,6 +113,77 @@
                         <!-- END Row Styles Content -->
                     </div>
                 <?php } ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'travaux'){ ?>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <div class="block-title"><h4>TRAVAUX</h4></div>
+                                <div class="table-responsive">
+                                    <table id="table-travaux" class="table table-vcenter table-condensed table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">Numéro</th>
+                                                <th class="text-center">Infrastructure</th>
+                                                <th>Service</th>
+                                                <th>Type</th>
+                                                <th>Titre</th>
+                                                <th>Date de Création</th>
+                                                <th>Etat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php
+                                        $sql_travaux = mysql_query("SELECT * FROM p_travaux ORDER BY date_travaux ASC")or die(mysql_error());
+                                        while($travaux = mysql_fetch_array($sql_travaux))
+                                        {
+                                        ?>
+                                            <tr>
+                                                <td>#<?= $travaux['idtravaux']; ?></td>
+                                                <td><?= $travaux['infrastructure']; ?></td>
+                                                <td><?= $travaux['service']; ?></td>
+                                                <td>
+                                                    <?php
+                                                    switch($travaux['type_travaux'])
+                                                    {
+                                                        case 1:
+                                                            echo "Maintenance";
+                                                            break;
+                                                        case 2:
+                                                            echo "Incident";
+                                                            break;
+                                                        case 3:
+                                                            echo "Amélioration";
+                                                            break;
+                                                    }
+                                                    ?>
+                                                </td>
+                                                <td><?= html_entity_decode($travaux['titre_travaux']); ?></td>
+                                                <td><?= date("d-m-y à H:i", $travaux['date_travaux']); ?></td>
+                                                <td>
+                                                    <?php
+                                                    switch($travaux['etat_travaux'])
+                                                    {
+                                                        case 0:
+                                                            echo "<span class='label label-info'><i class='fa fa-clock-o'></i> Programmer</span>";
+                                                            break;
+                                                        case 1:
+                                                            echo "<span class='label label-warning'><i class='fa fa-spinner fa-spin'></i> En cours...</span>";
+                                                            break;
+                                                        case 2:
+                                                            echo "<span class='label label-success'><i class='fa fa-check-square-o'></i> Terminer</span>";
+                                                            break;
+                                                    }
+                                                    ?>
+                                                </td>
+                                            </tr>
+                                        <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
             <!-- END Page Content -->
 
@@ -120,6 +191,8 @@
 
 
 <!-- Load and execute javascript code used only in this page -->
+            <script src="<?= ROOT,ASSETS,JS; ?>pages/tablesDatatables.js"></script>
+            <script>$(function(){ TablesDatatables.init(); });</script>
 <script src="<?= ROOT,ASSETS,JS; ?>pages/index.js"></script>
 <script>$(function(){ Index.init(); });</script>
 </body>
