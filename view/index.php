@@ -184,7 +184,7 @@
                         </div>
                     </div>
                 <?php } ?>
-                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'view-travaux'){ ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'view_travaux'){ ?>
                     <?php
                     $idtravaux = $_GET['idtravaux'];
                     $sql_travaux = mysql_query("SELECT * FROM p_travaux WHERE idtravaux = '$idtravaux'")or die(mysql_error());
