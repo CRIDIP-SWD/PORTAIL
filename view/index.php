@@ -269,7 +269,7 @@
                                     <!-- You can remove the class .timeline-hover if you don't want each event to be highlighted on mouse hover -->
                                     <ul class="timeline-list timeline-hover">
                                         <?php
-                                        $sql_social_first = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial ASC LIMIT 1")or die(mysql_error());
+                                        $sql_social_first = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial DESC LIMIT 1")or die(mysql_error());
                                         while($social_first = mysql_fetch_array($sql_social_first))
                                         {
                                         ?>
@@ -282,7 +282,7 @@
                                         </li>
                                         <?php } ?>
                                         <?php
-                                        $sql_social = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial ASC LIMIT 1, 999")or die(mysql_error());
+                                        $sql_social = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial DESC LIMIT 1, 999")or die(mysql_error());
                                         while($social = mysql_fetch_array($sql_social))
                                         {
                                         ?>
