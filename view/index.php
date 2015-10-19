@@ -137,7 +137,7 @@
                                         while($travaux = mysql_fetch_array($sql_travaux))
                                         {
                                         ?>
-                                            <tr>
+                                            <tr onclick="window.location='index.php?view=index&sub=view_travaux&idtravaux=<?= $travaux['idtravaux']; ?>'" style="cursor: hand;">
                                                 <td>#<?= $travaux['idtravaux']; ?></td>
                                                 <td><?= $travaux['infrastructure']; ?></td>
                                                 <td><?= $travaux['service']; ?></td>
