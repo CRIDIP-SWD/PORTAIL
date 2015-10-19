@@ -240,13 +240,13 @@
                                             switch($travaux['etat_travaux'])
                                             {
                                                 case 0:
-                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-danger' role='progressbar' aria-valuenow='33' aria-valuemin='0' aria-valuemax='100' style='width: 33%'>Programmer</div></div>";
+                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-danger' role='progressbar' aria-valuenow='33' aria-valuemin='0' aria-valuemax='100' style='width: 33%'></div></div>";
                                                     break;
                                                 case 1:
-                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-warning' role='progressbar' aria-valuenow='66' aria-valuemin='0' aria-valuemax='100' style='width: 66%'>En cours...</div></div>";
+                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-warning' role='progressbar' aria-valuenow='66' aria-valuemin='0' aria-valuemax='100' style='width: 66%'></div></div>";
                                                     break;
                                                 case 2:
-                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-success' role='progressbar' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100' style='width: 100%'>Terminer</div></div>";
+                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-success' role='progressbar' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100' style='width: 100%'></div></div>";
                                                     break;
                                             }
                                             ?>
