@@ -202,6 +202,56 @@
                                         <td style="width: 50%; font-weight: bold;">Infrastructure:</td>
                                         <td style="width: 50%;"><?= $travaux['infrastructure']; ?></td>
                                     </tr>
+                                    <tr>
+                                        <td style="width: 50%; font-weight: bold;">Service:</td>
+                                        <td style="width: 50%;"><?= $travaux['service']; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 50%; font-weight: bold;">Type:</td>
+                                        <td style="width: 50%;">
+                                            <?php
+                                            switch($travaux['type_travaux'])
+                                            {
+                                                case 1:
+                                                    echo "<span class='label label-default'><i class='fa fa-wrench text-danger'></i></span> Maintenance";
+                                                    break;
+                                                case 2:
+                                                    echo "<span class='label label-default'><i class='fa fa-warning text-warning'></i></span> Incident";
+                                                    break;
+                                                case 3:
+                                                    echo "<span class='label label-default'><i class='fa fa-level-up text-success'></i></span> Amélioration";
+                                                    break;
+                                            }
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 50%; font-weight: bold;">Date de Création:</td>
+                                        <td style="width: 50%;"><?= date("d-m-Y à H:i", $travaux['date_travaux']); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 50%; font-weight: bold;">Date de mise à jour:</td>
+                                        <td style="width: 50%;"><?= date("d-m-Y à H:i", $travaux['date_update']); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 50%; font-weight: bold;">Etat:</td>
+                                        <td style="width: 50%;">
+                                            <?php
+                                            switch($travaux['etat_travaux'])
+                                            {
+                                                case 0:
+                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-danger' role='progressbar' aria-valuenow='33' aria-valuemin='0' aria-valuemax='100' style='width: 33%'>Programmer</div></div>";
+                                                    break;
+                                                case 1:
+                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-warning' role='progressbar' aria-valuenow='66' aria-valuemin='0' aria-valuemax='100' style='width: 66%'>En cours...</div></div>";
+                                                    break;
+                                                case 2:
+                                                    echo "<div class='progress progress-striped active'><div class='progress-bar progress-bar-success' role='progressbar' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100' style='width: 100%'>Terminer</div></div>";
+                                                    break;
+                                            }
+                                            ?>
+                                        </td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
