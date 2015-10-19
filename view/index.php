@@ -191,7 +191,7 @@
                     $travaux = mysql_fetch_array($sql_travaux);
                     ?>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="block">
                                 <!-- Block Title -->
                                 <div class="block-title">
