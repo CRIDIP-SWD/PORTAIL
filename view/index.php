@@ -191,8 +191,11 @@
                     $travaux = mysql_fetch_array($sql_travaux);
                     ?>
                     <div class="row">
-                        <a class="btn btn-lg btn-primary" onclick="history.back()"><i class="fa fa-arrow-left"></i> RETOUR</a>
+                        <div class="pull-right">
+                            <a class="btn btn-lg btn-primary" onclick="history.back()"><i class="fa fa-arrow-left"></i> RETOUR</a>
+                        </div>
                     </div>
+                    <br />
                     <div class="row">
                         <div class="col-md-4">
                             <div class="block">
