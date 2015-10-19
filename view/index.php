@@ -146,13 +146,13 @@
                                                     switch($travaux['type_travaux'])
                                                     {
                                                         case 1:
-                                                            echo "<i class='fa fa-wrench text-danger'></i> Maintenance";
+                                                            echo "<span class='label label-default'><i class='fa fa-wrench text-danger'></i></span> Maintenance";
                                                             break;
                                                         case 2:
-                                                            echo "<i class='fa fa-wrench text-warning'></i> Incident";
+                                                            echo "<span class='label label-default'><i class='fa fa-warning text-warning'></i></span> Incident";
                                                             break;
                                                         case 3:
-                                                            echo "<i class='fa fa-level-up text-success'></i>Amélioration";
+                                                            echo "<span class='label label-default'><i class='fa fa-level-up text-success'></i></span> Amélioration";
                                                             break;
                                                     }
                                                     ?>
