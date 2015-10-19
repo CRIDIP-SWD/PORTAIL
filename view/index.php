@@ -299,7 +299,7 @@
                                         while($social_first = mysql_fetch_array($sql_social_first))
                                         {
                                         ?>
-                                        <li class="active">
+                                        <li class="">
                                             <div class="timeline-icon"><i class="fa fa-file-text"></i></div>
                                             <div class="timeline-time">9:15 <strong>am</strong></div>
                                             <div class="timeline-content">
@@ -307,7 +307,7 @@
                                                 A1 Conference Room
                                             </div>
                                         </li>
-
+                                        <?php } ?>
                                     </ul>
                                 </div>
                                 <!-- END Timeline Style Content -->
