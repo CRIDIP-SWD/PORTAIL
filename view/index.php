@@ -275,36 +275,22 @@
                                         ?>
                                         <li class="active">
                                             <div class="timeline-icon"><i class="gi gi-message_empty"></i></div>
-                                            <div class="timeline-time"></div>
+                                            <div class="timeline-time"><?= date("d-m-Y à H:i", $social_first['date_social']); ?></div>
                                             <div class="timeline-content">
-                                                <p class="push-bit"><strong>Breakfast</strong></p>
-                                                <p class="push-bit">An awesome breakfast will wait for you at the lobby!</p>
-                                                <div class="row push">
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <a href="img/placeholders/photos/photo6.jpg" data-toggle="lightbox-image">
-                                                            <img src="img/placeholders/photos/photo6.jpg" alt="image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-sm-6 col-md-4">
-                                                        <a href="img/placeholders/photos/photo7.jpg" data-toggle="lightbox-image">
-                                                            <img src="img/placeholders/photos/photo7.jpg" alt="image">
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <p class="push-bit"><?= html_entity_decode($social_first['description']); ?></p>
                                             </div>
                                         </li>
                                         <?php } ?>
                                         <?php
-                                        $sql_social_first = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial ASC LIMIT 2, 999")or die(mysql_error());
-                                        while($social_first = mysql_fetch_array($sql_social_first))
+                                        $sql_social = mysql_query("SELECT * FROM p_travaux_discussion WHERE idtravaux = '$idtravaux' ORDER BY idtravauxsocial ASC LIMIT 2, 999")or die(mysql_error());
+                                        while($social = mysql_fetch_array($sql_social))
                                         {
                                         ?>
                                         <li class="">
-                                            <div class="timeline-icon"><i class="fa fa-file-text"></i></div>
-                                            <div class="timeline-time">9:15 <strong>am</strong></div>
+                                            <div class="timeline-icon"><i class="gi gi-message_empty"></i></div>
+                                            <div class="timeline-time"><?= date("d-m-Y à H:i", $social['date_social']); ?></div>
                                             <div class="timeline-content">
-                                                <p class="push-bit"><strong>Web Design Session</strong></p>
-                                                A1 Conference Room
+                                                <p class="push-bit"><?= html_entity_decode($social['description']); ?></p>
                                             </div>
                                         </li>
                                         <?php } ?>
