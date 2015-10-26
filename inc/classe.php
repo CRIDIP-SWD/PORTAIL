@@ -19,3 +19,6 @@ $devis_class = new devis();
 require_once "control/cridip/commande.php";
 $commande_class = new commande();
 
+require_once "control/cridip/facture.php";
+$facture_class = new facture();
+

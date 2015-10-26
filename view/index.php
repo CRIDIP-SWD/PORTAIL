@@ -430,7 +430,61 @@
                                                             <?= $commande_class->etat_cmd_text($commande['etat_commande']); ?>
                                                         </td>
                                                         <td>
-                                                            <a href="http://gestcom.cridip.com/token/commande.php?num_cmd=<?= $commande['num_commande']; ?>" class="btn" data-toogle="tooltip" data-original-title="Voir le devis"><i class="fa fa-eye text-info"></i></a>
+                                                            <a href="http://gestcom.cridip.com/token/commande.php?num_commande=<?= $commande['num_commande']; ?>" class="btn" data-toogle="tooltip" data-original-title="Voir la commande"><i class="fa fa-eye text-info"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                <?php }?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- END Block Content -->
+                                    </div>
+                                    <div class="block">
+                                        <!-- Block Title -->
+                                        <div class="block-title">
+                                            <h2>Vos Facture</h2>
+                                        </div>
+                                        <!-- END Block Title -->
+
+                                        <!-- Block Content -->
+                                        <div class="table-responsive">
+                                            <table id="table-facture" class="table table-vcenter table-condensed table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th>Numéro de la facture</th>
+                                                    <th>Date de la facture</th>
+                                                    <th>Date d'écheance</th>
+                                                    <th>Total</th>
+                                                    <th>Etat</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <?php
+                                                $sql_facture = mysql_query("SELECT * FROM c_facture WHERE idclient = '$idclient'")or die(mysql_error());
+                                                while($facture = mysql_fetch_array($sql_facture))
+                                                {
+                                                    ?>
+                                                    <tr>
+                                                        <td><?= $facture['num_facture']; ?></td>
+                                                        <td class="text-center"><?= date("d/m/Y", $facture['date_facture']); ?></td>
+                                                        <td class="text-center">
+                                                            <?php
+                                                            if($facture['date_echeance'] <= $date_jour_strt)
+                                                            {
+                                                                echo "<span class='label label-danger' data-toggle='tooltip' data-original-title='Arrivé à écheance'>".date('d/m/Y', $facture['date_echeance'])."</span>";
+                                                            }else{
+                                                                echo "<span class='label label-success'>".date('d/m/Y', $facture['date_echeance'])."</span>";
+                                                            }
+                                                            ?>
+                                                        </td>
+                                                        <td class="pull-right"><?= number_format($facture->total_ttc($facture['total_ht']), 2, ',',' ')." €"; ?></td>
+                                                        <td class="text-center">
+                                                            <?= $facture_class->etat_fct_text($facture['etat_facture']); ?>
+                                                        </td>
+                                                        <td>
+                                                            <a href="http://gestcom.cridip.com/token/facture.php?num_facture=<?= $facture['num_facture']; ?>" class="btn" data-toogle="tooltip" data-original-title="Voir la facture"><i class="fa fa-eye text-info"></i></a>
                                                         </td>
                                                     </tr>
                                                 <?php }?>
