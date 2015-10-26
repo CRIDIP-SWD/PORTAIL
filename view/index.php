@@ -341,10 +341,57 @@
                             <div class="block">
                                 <!-- Block Content -->
                                 <div class="list-group">
-                                    <a href="javascript:void(0)" class="list-group-item active">
+                                    <a href="index.php?view=index&sub=profil" class="list-group-item <?php if($_GET['sub'] == 'profil'){echo 'active';} ?>">
                                         <h4 class="list-group-item-heading">Accueil</h4>
                                     </a>
-                                    <a href="javascript:void(0)" class="list-group-item">
+                                    <a href="index.php?view=index&sub=compte" class="list-group-item <?php if($_GET['sub'] == 'compte'){echo 'active';} ?>">
+                                        <h4 class="list-group-item-heading">Compte</h4>
+                                    </a>
+                                </div>
+
+                                <!-- END Block Content -->
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'compte'){ ?>
+                    <div class="content-header content-header-media">
+                        <div class="header-section">
+                            <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" alt="Avatar" class="pull-right img-circle">
+                            <h1><?= $client['nom_client']; ?> <br><small><?= $client['nom_societe']; ?></small></h1>
+                        </div>
+                        <!-- For best results use an image with a resolution of 2560x248 pixels (You can also use a blurred image with ratio 10:1 - eg: 1000x100 pixels - it will adjust and look great!) -->
+                        <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/headers/profile_header.jpg" alt="header image" class="animation-pulseSlow">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="block">
+                                <!-- Block Title -->
+                                <div class="block-title">
+                                    <h2>Votre Profil</h2>
+                                </div>
+                                <!-- END Block Title -->
+
+                                <!-- Block Content -->
+                                <div class="text-center">
+                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" class="img-circle" />
+                                    <h1><strong><?= $client['nom_societe']; ?></strong></h1>
+                                    <h4 class="text-muted"><?= $client['nom_client']; ?></h4>
+                                </div>
+
+                                <!-- END Block Content -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="block">
+                                <!-- Block Content -->
+                                <div class="list-group">
+                                    <a href="index.php?view=index&sub=profil" class="list-group-item <?php if($_GET['sub'] == 'profil'){echo 'active';} ?>">
+                                        <h4 class="list-group-item-heading">Accueil</h4>
+                                    </a>
+                                    <a href="index.php?view=index&sub=compte" class="list-group-item <?php if($_GET['sub'] == 'compte'){echo 'active';} ?>">
                                         <h4 class="list-group-item-heading">Compte</h4>
                                     </a>
                                 </div>
