@@ -316,6 +316,25 @@
                         <!-- For best results use an image with a resolution of 2560x248 pixels (You can also use a blurred image with ratio 10:1 - eg: 1000x100 pixels - it will adjust and look great!) -->
                         <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/headers/profile_header.jpg" alt="header image" class="animation-pulseSlow">
                     </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="block">
+                                <!-- Block Title -->
+                                <div class="block-title">
+                                    <h2>Votre Profil</h2>
+                                </div>
+                                <!-- END Block Title -->
+
+                                <!-- Block Content -->
+                                <div class="sidebar-user-avatar">
+                                    <a href="index.php?view=index&sub=profil">
+                                        <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" alt="avatar">
+                                    </a>
+                                </div>
+                                <!-- END Block Content -->
+                            </div>
+                        </div>
+                    </div>
                 <?php } ?>
             </div>
             <!-- END Page Content -->
