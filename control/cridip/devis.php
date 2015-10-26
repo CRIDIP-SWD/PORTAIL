@@ -32,10 +32,10 @@ class devis
                 echo "Brouillon";
                 break;
             case 1:
-                echo "Envoyé";
+                echo "EnvoyÃ©";
                 break;
             case 2:
-                echo "Accepté";
+                echo "AcceptÃ©";
                 break;
             case 3:
                 echo "Perdu";
