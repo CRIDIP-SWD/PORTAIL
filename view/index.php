@@ -335,6 +335,16 @@
                                 <!-- END Block Content -->
                             </div>
                         </div>
+                        <div class="col-md-8">
+                            <?php if($client['etat_client'] == 0){ ?>
+                                <div class="alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    <h4><i class="fa fa-times-circle"></i> Erreur</h4> Votre compte n'est pas actif ou aucune prestation n'est disponible !</a>!
+                                </div>
+                            <?php }else{ ?>
+
+                            <?php } ?>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
