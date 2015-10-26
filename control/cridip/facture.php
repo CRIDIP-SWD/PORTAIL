@@ -29,22 +29,22 @@ class facture
         switch($etat)
         {
             case 0:
-                echo "Créer";
+                echo "CrÃ©er";
                 break;
             case 1:
-                echo "Facture envoyé";
+                echo "Facture envoyÃ©";
                 break;
             case 2:
-                echo "Payé";
+                echo "PayÃ©";
                 break;
             case 3:
-                echo "Partiellement Payé";
+                echo "Partiellement PayÃ©";
                 break;
             case 4:
-                echo "Impayé";
+                echo "ImpayÃ©";
                 break;
             case 5:
-                echo "Annulée";
+                echo "AnnulÃ©e";
                 break;
 
         }
@@ -133,13 +133,13 @@ class facture
                 echo "Carte Bancaire (Portail)";
                 break;
             case 3:
-                echo "Chèque Bancaire";
+                echo "ChÃ¨que Bancaire";
                 break;
             case 4:
-                echo "Chèque de Banque";
+                echo "ChÃ¨que de Banque";
                 break;
             case 5:
-                echo "Espèce (Mandat Cash)";
+                echo "EspÃ¨ce (Mandat Cash)";
                 break;
         }
     }

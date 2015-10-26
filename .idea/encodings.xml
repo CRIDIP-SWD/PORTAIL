@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/control/client.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/control/cridip/devis.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/control/cridip/facture.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/inc/classe.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/inc/config.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/inc/footer.php" charset="UTF-8" />
