@@ -331,6 +331,24 @@
                                     <h1><strong><?= $client['nom_societe']; ?></strong></h1>
                                     <h4 class="text-muted"><?= $client['nom_client']; ?></h4>
                                 </div>
+
+                                <!-- END Block Content -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="block">
+                                <!-- Block Content -->
+                                <div class="list-group">
+                                    <a href="javascript:void(0)" class="list-group-item active">
+                                        <h4 class="list-group-item-heading">Accueil</h4>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <h4 class="list-group-item-heading">Compte</h4>
+                                    </a>
+                                </div>
+
                                 <!-- END Block Content -->
                             </div>
                         </div>
