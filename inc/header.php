@@ -6,6 +6,7 @@ if(!isset($_SESSION['login'])){
 }
 $login = $_SESSION['login'];
 include "classe.php";
+$idclient = $client['idclient'];
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->

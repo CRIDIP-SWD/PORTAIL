@@ -339,10 +339,61 @@
                             <?php if($client['etat_client'] == 0){ ?>
                                 <div class="alert alert-danger alert-dismissable">
                                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                    <h4><i class="fa fa-times-circle"></i> Erreur</h4> Votre compte n'est pas actif ou aucune prestation n'est disponible !</a>!
+                                    <h4><i class="fa fa-times-circle"></i> Erreur</h4> Votre compte n'est pas actif ou aucune prestation n'est disponible !
                                 </div>
                             <?php }else{ ?>
+                                <?php if($client['cridip'] == 1){ ?>
+                                    <div class="block">
+                                        <!-- Block Title -->
+                                        <div class="block-title">
+                                            <h2>Vos devis</h2>
+                                        </div>
+                                        <!-- END Block Title -->
 
+                                        <!-- Block Content -->
+                                        <div class="table-responsive">
+                                            <table id="table-devis" class="table table-vcenter table-condensed table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Numéro de devis</th>
+                                                        <th>Date du devis</th>
+                                                        <th>Date d'expiration</th>
+                                                        <th>Total</th>
+                                                        <th>Etat</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                <?php
+                                                $sql_devis = mysql_query("SELECT * FROM c_devis WHERE idclient = '$idclient'")or die(mysql_error());
+                                                while($devis = mysql_fetch_array($sql_devis))
+                                                {
+                                                ?>
+                                                    <tr>
+                                                        <td><?= $devis['num_devis']; ?></td>
+                                                        <td><?= date("d/m/Y", $devis['date_devis']); ?></td>
+                                                        <td>
+                                                            <?php
+                                                            if($devis['date_expire'] >= $date_jour_strt)
+                                                            {
+                                                                echo "<span class='label label-danger' data-toggle='tooltip' data-original-title='Expiré'>".date('d/m/Y', $devis['date_expire'])."</span>";
+                                                            }else{
+                                                                echo "<span class='label label-success'>".date('d/m/Y', $devis['date_expire'])."</span>";
+                                                            }
+                                                            ?>
+                                                        </td>
+                                                        <td class="pull-right"><?= number_format($devis_class->total_ttc($devis['total_ht']), 2, ',',' ')." €"; ?></td>
+                                                        <td>
+                                                            <?= $devis_class->etat_devis_text($devis['etat_devis']); ?>
+                                                        </td>
+                                                    </tr>
+                                                <?php }?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- END Block Content -->
+                                    </div>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                     </div>

@@ -18,6 +18,12 @@ var TablesDatatables = function() {
                 lengthMenu: [[10, 20, 30, -1], [10, 20, 30, 'All']]
             });
 
+            $('#table-travaux').dataTable({
+                columnDefs: [ { orderable: false, targets: [ 1, 5 ] } ],
+                pageLength: 10,
+                lengthMenu: [[10, 20, 30, -1], [10, 20, 30, 'All']]
+            });
+
             /* Add placeholder attribute to the search input */
             $('.dataTables_filter input').attr('placeholder', 'Search');
         }
