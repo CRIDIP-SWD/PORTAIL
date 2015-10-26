@@ -360,6 +360,7 @@
                                                         <th>Date d'expiration</th>
                                                         <th>Total</th>
                                                         <th>Etat</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -384,6 +385,9 @@
                                                         <td class="pull-right"><?= number_format($devis_class->total_ttc($devis['total_ht']), 2, ',',' ')." €"; ?></td>
                                                         <td class="text-center">
                                                             <?= $devis_class->etat_devis_text($devis['etat_devis']); ?>
+                                                        </td>
+                                                        <td>
+                                                            <a href="http://gestcom.cridip.com/token/devis.php?num_devis=<?= $devis['num_devis']; ?>" class="btn" data-toogle="tooltip" data-original-title="Voir le devis"><i class="fa fa-eye text-info"></i></a>
                                                         </td>
                                                     </tr>
                                                 <?php }?>
