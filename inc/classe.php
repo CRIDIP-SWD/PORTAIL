@@ -16,3 +16,6 @@ $client = $client->info_client($login);
 require_once "control/cridip/devis.php";
 $devis_class = new devis();
 
+require_once "control/cridip/commande.php";
+$commande_class = new commande();
+
