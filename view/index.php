@@ -331,6 +331,19 @@
                                     <h1><strong><?= $client['nom_societe']; ?></strong></h1>
                                     <h4 class="text-muted"><?= $client['nom_client']; ?></h4>
                                 </div>
+                                <div class="block">
+                                    <!-- Block Content -->
+                                    <div class="list-group">
+                                        <a href="index.php?view=index&sub=profil" class="list-group-item <?php if($_GET['sub'] == 'profil'){echo 'active';} ?>">
+                                            <h4 class="list-group-item-heading">Accueil</h4>
+                                        </a>
+                                        <a href="index.php?view=index&sub=compte" class="list-group-item <?php if($_GET['sub'] == 'compte'){echo 'active';} ?>">
+                                            <h4 class="list-group-item-heading">Compte</h4>
+                                        </a>
+                                    </div>
+
+                                    <!-- END Block Content -->
+                                </div>
 
                                 <!-- END Block Content -->
                             </div>
@@ -498,23 +511,7 @@
                             <?php } ?>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="block">
-                                <!-- Block Content -->
-                                <div class="list-group">
-                                    <a href="index.php?view=index&sub=profil" class="list-group-item <?php if($_GET['sub'] == 'profil'){echo 'active';} ?>">
-                                        <h4 class="list-group-item-heading">Accueil</h4>
-                                    </a>
-                                    <a href="index.php?view=index&sub=compte" class="list-group-item <?php if($_GET['sub'] == 'compte'){echo 'active';} ?>">
-                                        <h4 class="list-group-item-heading">Compte</h4>
-                                    </a>
-                                </div>
 
-                                <!-- END Block Content -->
-                            </div>
-                        </div>
-                    </div>
                 <?php } ?>
                 <?php if(isset($_GET['sub']) && $_GET['sub'] == 'compte'){ ?>
                     <div class="content-header content-header-media">
