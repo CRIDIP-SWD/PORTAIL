@@ -479,7 +479,7 @@
                                                             }
                                                             ?>
                                                         </td>
-                                                        <td class="pull-right"><?= number_format($facture->total_ttc($facture['total_ht']), 2, ',',' ')." €"; ?></td>
+                                                        <td class="pull-right"><?= number_format($facture_class->total_ttc($facture['total_ht']), 2, ',',' ')." €"; ?></td>
                                                         <td class="text-center">
                                                             <?= $facture_class->etat_fct_text($facture['etat_facture']); ?>
                                                         </td>
