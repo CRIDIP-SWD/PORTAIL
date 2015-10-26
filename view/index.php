@@ -326,10 +326,8 @@
                                 <!-- END Block Title -->
 
                                 <!-- Block Content -->
-                                <div class="sidebar-user-avatar">
-                                    <a href="index.php?view=index&sub=profil">
-                                        <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" alt="avatar">
-                                    </a>
+                                <div class="text-center">
+                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholder/avatars/avatar2.jpg" class="img-circle" />
                                 </div>
                                 <!-- END Block Content -->
                             </div>
