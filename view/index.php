@@ -328,6 +328,8 @@
                                 <!-- Block Content -->
                                 <div class="text-center">
                                     <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" class="img-circle" />
+                                    <h1><strong><?= $client['nom_societe']; ?></strong></h1>
+                                    <h4 class="text-muted"><?= $client['nom_client']; ?></h4>
                                 </div>
                                 <!-- END Block Content -->
                             </div>
