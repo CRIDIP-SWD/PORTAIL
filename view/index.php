@@ -307,6 +307,16 @@
                         </div>
                     </div>
                 <?php } ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'profil'){ ?>
+                    <div class="content-header content-header-media">
+                        <div class="header-section">
+                            <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" alt="Avatar" class="pull-right img-circle">
+                            <h1><?= $client['nom_client']; ?> <br><small><?= $client['nom_societe']; ?></small></h1>
+                        </div>
+                        <!-- For best results use an image with a resolution of 2560x248 pixels (You can also use a blurred image with ratio 10:1 - eg: 1000x100 pixels - it will adjust and look great!) -->
+                        <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/headers/profile_header.jpg" alt="header image" class="animation-pulseSlow">
+                    </div>
+                <?php } ?>
             </div>
             <!-- END Page Content -->
 
