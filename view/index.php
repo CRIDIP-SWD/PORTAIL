@@ -327,7 +327,7 @@
 
                                 <!-- Block Content -->
                                 <div class="text-center">
-                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholder/avatars/avatar2.jpg" class="img-circle" />
+                                    <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" class="img-circle" />
                                 </div>
                                 <!-- END Block Content -->
                             </div>
