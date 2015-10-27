@@ -308,6 +308,9 @@
                     </div>
                 <?php } ?>
                 <?php if(isset($_GET['sub']) && $_GET['sub'] == 'profil'){ ?>
+                    <?php
+                    $idclient = $client['idclient'];
+                    ?>
                     <div class="content-header content-header-media">
                         <div class="header-section">
                             <img src="<?= ROOT,ASSETS,IMAGES; ?>placeholders/avatars/avatar2.jpg" alt="Avatar" class="pull-right img-circle">
