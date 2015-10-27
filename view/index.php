@@ -417,7 +417,7 @@
                                                                     <?= $devis_class->etat_devis_format($devis['etat_devis']); ?>
                                                                 </td>
                                                                 <td>
-                                                                    <button type="button" class="btn" onclick=""><i class="fa fa-eye text-info"></i></button>
+                                                                    <button type="button" class="btn" onclick="window.location.href='http://gestcom.cridip.com/token/devis.php?num_devis=<?= $devis['num_devis']; ?>'"><i class="fa fa-eye text-info"></i></button>
                                                                 </td>
                                                             </tr>
                                                         <?php }?>
