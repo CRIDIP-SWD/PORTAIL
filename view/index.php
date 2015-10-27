@@ -404,9 +404,13 @@
                                                                 <td><?= date("d/m/Y", $devis['date_devis']); ?></td>
                                                                 <td>
                                                                     <?php
-                                                                    if($devis['date_expire'] <= $date_jour_strt)
-                                                                    {
-                                                                        echo "<span class='label label-danger' data-toggle='tooltip' data-original-title='Expiré'>".date('d/m/Y', $devis['date_expire'])."</span>";
+                                                                    if($devis['etat_devis'] == 0 OR $devis['etat_devis'] == 1){
+                                                                        if($devis['date_expire'] <= $date_jour_strt)
+                                                                        {
+                                                                            echo "<span class='label label-danger' data-toggle='tooltip' data-original-title='Expiré'>".date('d/m/Y', $devis['date_expire'])."</span>";
+                                                                        }else{
+                                                                            echo "<span class='label label-success'>".date('d/m/Y', $devis['date_expire'])."</span>";
+                                                                        }
                                                                     }else{
                                                                         echo "<span class='label label-success'>".date('d/m/Y', $devis['date_expire'])."</span>";
                                                                     }
