@@ -113,6 +113,7 @@ var FormsValidation = function() {
             $('#masked_taxid').mask('99-9999999');
             $('#masked_ssn').mask('999-99-9999');
             $('#masked_pkey').mask('a*-999-a999');
+            $('#telephone').mask('0033999999999');
         }
     };
 }();

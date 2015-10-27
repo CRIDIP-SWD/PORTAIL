@@ -357,61 +357,6 @@
                                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                                     <h4><i class="fa fa-times-circle"></i> Erreur</h4> Votre compte n'est pas actif ou aucune prestation n'est disponible !
                                 </div>
-                            <?php }else{ ?>
-                                <div class="block full">
-                                    <!-- Block Tabs Title -->
-                                    <div class="block-title">
-                                        <ul class="nav nav-tabs" data-toggle="tabs">
-                                            <?php if($client['cridip'] == 1){ ?>
-                                            <li class="active"><a href="#cridip">CRIDIP</a></li>
-                                            <?php } ?>
-                                            <?php if($client['swd'] == 1){ ?>
-                                            <li><a href="#swd">CRIDIP-SWD</a></li>
-                                            <?php } ?>
-                                            <?php if($client['scpvs'] == 1){ ?>
-                                            <li><a href="#scpvs" data-toggle="tooltip" title="Settings">SCPVS</a></li>
-                                            <?php } ?>
-                                        </ul>
-                                    </div>
-                                    <!-- END Block Tabs Title -->
-
-                                    <!-- Tabs Content -->
-                                    <div class="tab-content">
-                                        <?php if($client['cridip'] == 1){ ?>
-                                        <div class="tab-pane active" id="cridip">
-                                            <h1>Votre Balance</h1>
-                                            <table class="table">
-                                                <tbody>
-                                                <tr>
-                                                    <td>Total Facturé:</td>
-                                                    <td style="text-align: right;"><?= number_format($client->sum_fact_clt($idclient), "2", ",", " ")." €"; ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Total Payé:</td>
-                                                    <td style="text-align: right;"><?= number_format($client->sum_rglt_clt($idclient), "2", ",", " ")." €"; ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Balance:</td>
-                                                    <td style="text-align: right;">
-                                                        <?php
-                                                        if($client_class->clt_balance($idclient) >= 0){echo "<span class='text-success'>".number_format($client_class->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
-                                                        if($client_class->clt_balance($idclient) < 0){echo "<span class='text-danger'>".number_format($client_class->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
-                                                        ?>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <?php } ?>
-                                        <?php if($client['swd'] == 1){ ?>
-                                        <div class="tab-pane" id="swd">Profile..</div>
-                                        <?php } ?>
-                                        <?php if($client['scpvs'] == 1){ ?>
-                                        <div class="tab-pane" id="scpvs">Settings..</div>
-                                        <?php } ?>
-                                    </div>
-                                    <!-- END Tabs Content -->
-                                </div>
                             <?php } ?>
                         </div>
                     </div>
@@ -441,28 +386,108 @@
                                     <h1><strong><?= $client['nom_societe']; ?></strong></h1>
                                     <h4 class="text-muted"><?= $client['nom_client']; ?></h4>
                                 </div>
+                                <div class="block">
+                                    <!-- Block Content -->
+                                    <div class="list-group">
+                                        <a href="index.php?view=index&sub=profil" class="list-group-item <?php if($_GET['sub'] == 'profil'){echo 'active';} ?>">
+                                            <h4 class="list-group-item-heading">Accueil</h4>
+                                        </a>
+                                        <a href="index.php?view=index&sub=compte" class="list-group-item <?php if($_GET['sub'] == 'compte'){echo 'active';} ?>">
+                                            <h4 class="list-group-item-heading">Compte</h4>
+                                        </a>
+                                    </div>
 
-                                <!-- END Block Content -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="block">
-                                <!-- Block Content -->
-                                <div class="list-group">
-                                    <a href="index.php?view=index&sub=profil" class="list-group-item <?php if($_GET['sub'] == 'profil'){echo 'active';} ?>">
-                                        <h4 class="list-group-item-heading">Accueil</h4>
-                                    </a>
-                                    <a href="index.php?view=index&sub=compte" class="list-group-item <?php if($_GET['sub'] == 'compte'){echo 'active';} ?>">
-                                        <h4 class="list-group-item-heading">Compte</h4>
-                                    </a>
+                                    <!-- END Block Content -->
                                 </div>
 
                                 <!-- END Block Content -->
                             </div>
                         </div>
+                        <div class="col-md-8">
+                            <div class="block full">
+                                <!-- Block Tabs Title -->
+                                <div class="block-title">
+                                    <ul class="nav nav-tabs pull-right" data-toggle="tabs">
+                                        <li class="active"><a href="#info">Information Personnel</a></li>
+                                        <li><a href="#modif-password">Modifier le mot de passe</a></li>
+                                    </ul>
+                                </div>
+                                <!-- END Block Tabs Title -->
+
+                                <!-- Tabs Content -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="info">
+                                        <form class="form-horizontal" action="<?= ROOT,CONTROL; ?>client.php" method="post">
+                                            <input type="hidden" name="idclient" value="<?= $idclient; ?>" />
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="example-hf-email">Votre identité</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" name="nom_client" class="form-control" value="<?= $client['nom_client']; ?>">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="example-hf-email">Votre Société</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" name="nom_societe" class="form-control" value="<?= $client['nom_societe']; ?>">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="example-hf-email">Adresse Mail</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" name="nom_client" class="form-control" value="<?= $client['email']; ?>">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="example-hf-email">Votre N° de téléphone</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="telephone" name="telephone" class="form-control" value="<?= substr($client['telephone'], 4); ?>">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="example-textarea-input">Adresse Postal</label>
+                                                <div class="col-md-9">
+                                                    <textarea name="adresse" rows="6" class="form-control"><?= html_entity_decode($client['adresse']); ?></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="example-hf-email">Code Postal</label>
+                                                <div class="col-md-2">
+                                                    <input type="text" id="code_postal" name="code_postal" class="form-control" value="<?= $client['code_postal']; ?>">
+                                                </div>
+                                                <label class="col-md-3 control-label" for="example-hf-email">Ville</label>
+                                                <div class="col-md-4">
+                                                    <input type="text" name="ville" class="form-control" value="<?= html_entity_decode($client['ville']); ?>">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="example-hf-email">Région</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" name="region" class="form-control" value="<?= html_entity_decode($client['region']); ?>">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group form-actions">
+                                                <div class="col-sm-offset-9">
+                                                    <button class="btn btn-sm btn-primary" type="submit" name="action" value="edit-client-control"><i class="fa fa-pencil"></i> Modifier</button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane" id="modif-password">Profile..</div>
+                                </div>
+                                <!-- END Tabs Content -->
+                            </div>
+                        </div>
                     </div>
+
                 <?php } ?>
             </div>
             <!-- END Page Content -->
@@ -473,7 +498,11 @@
 <!-- Load and execute javascript code used only in this page -->
             <script src="<?= ROOT,ASSETS,JS; ?>pages/tablesDatatables.js"></script>
             <script>$(function(){ TablesDatatables.init(); });</script>
-<script src="<?= ROOT,ASSETS,JS; ?>pages/index.js"></script>
-<script>$(function(){ Index.init(); });</script>
+            <script src="<?= ROOT,ASSETS,JS; ?>pages/index.js"></script>
+            <script>$(function(){ Index.init(); });</script>
+            <script src="<?= ROOT,ASSETS,JS; ?>pages/formsGeneral.js"></script>
+            <script>$(function(){ FormsGeneral.init(); });</script>
+            <script src="<?= ROOT,ASSETS,JS; ?>pages/formsValidation.js"></script>
+            <script>$(function(){ FormsValidation.init(); });</script>
 </body>
 </html>
