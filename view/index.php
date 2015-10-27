@@ -377,24 +377,26 @@
                                         <?php if($client['cridip'] == 1){ ?>
                                         <div class="tab-pane active" id="cridip">
                                             <h1>Votre Balance</h1>
-                                            <table class="table table-bordered">
+                                            <table class="table">
+                                                <tbody>
                                                 <tr>
-                                                    <td>Vos Factures</td>
-                                                    <td><?= number_format($client->sum_fact_clt($idclient), 2, ',', ' ')." €"; ?></td>
+                                                    <td>Total Facturé:</td>
+                                                    <td style="text-align: right;"><?= number_format($client->sum_fact_clt($idclient), "2", ",", " ")." €"; ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Vos Paiements</td>
-                                                    <td><?= number_format($client->sum_rglt_clt($idclient), 2, ',', ' ')." €"; ?></td>
+                                                    <td>Total Payé:</td>
+                                                    <td style="text-align: right;"><?= number_format($client->sum_rglt_clt($idclient), "2", ",", " ")." €"; ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Solde</td>
-                                                    <td>
+                                                    <td>Balance:</td>
+                                                    <td style="text-align: right;">
                                                         <?php
-                                                        if($client->clt_balance($idclient) >= 0){echo "<span class='text-success'>".number_format($client->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
-                                                        if($client->clt_balance($idclient) < 0){echo "<span class='text-danger'>".number_format($client->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
+                                                        if($client_class->clt_balance($idclient) >= 0){echo "<span class='text-success'>".number_format($client_class->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
+                                                        if($client_class->clt_balance($idclient) < 0){echo "<span class='text-danger'>".number_format($client_class->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
                                                         ?>
                                                     </td>
                                                 </tr>
+                                                </tbody>
                                             </table>
                                         </div>
                                         <?php } ?>
