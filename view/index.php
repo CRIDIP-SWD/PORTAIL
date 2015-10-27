@@ -376,97 +376,26 @@
                                     <div class="tab-content">
                                         <?php if($client['cridip'] == 1){ ?>
                                         <div class="tab-pane active" id="cridip">
-                                            <div class="block full">
-                                                <div class="block-title">
-                                                    <h2><strong>Vos Devis</h2>
-                                                </div>
-
-                                                <div class="table-responsive">
-                                                    <table id="table-devis" class="table table-vcenter table-condensed table-bordered">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Numéro de devis</th>
-                                                                <th class="text-center">Date du devis</th>
-                                                                <th class="text-center">Date d'expiration</th>
-                                                                <th>Montant</th>
-                                                                <th class="text-center">Etat</th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
+                                            <h1>Votre Balance</h1>
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <td>Vos Factures</td>
+                                                    <td><?= number_format($client->sum_fact_clt($idclient), 2, ',', ' ')." €"; ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vos Paiements</td>
+                                                    <td><?= number_format($client->sum_rglt_clt($idclient), 2, ',', ' ')." €"; ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Solde</td>
+                                                    <td>
                                                         <?php
-                                                        $sql_devis = mysql_query("SELECT * FROM c_devis WHERE idclient = '$idclient'")or die(mysql_error());
-                                                        while($devis = mysql_fetch_array($sql_devis))
-                                                        {
+                                                        if($client->clt_balance($idclient) >= 0){echo "<span class='text-success'>".number_format($client->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
+                                                        if($client->clt_balance($idclient) < 0){echo "<span class='text-danger'>".number_format($client->clt_balance($idclient), "2", ",", " ")." €"."</span>";}
                                                         ?>
-                                                            <tr>
-                                                                <td><?= $devis['num_devis']; ?></td>
-                                                                <td><?= date("d/m/Y", $devis['date_devis']); ?></td>
-                                                                <td>
-                                                                    <?php
-                                                                    if($devis['etat_devis'] == 0 OR $devis['etat_devis'] == 1){
-                                                                        if($devis['date_expire'] <= $date_jour_strt)
-                                                                        {
-                                                                            echo "<span class='label label-danger' data-toggle='tooltip' data-original-title='Expiré'>".date('d/m/Y', $devis['date_expire'])."</span>";
-                                                                        }else{
-                                                                            echo "<span class='label label-success'>".date('d/m/Y', $devis['date_expire'])."</span>";
-                                                                        }
-                                                                    }else{
-                                                                        echo "<span class='label label-success'>".date('d/m/Y', $devis['date_expire'])."</span>";
-                                                                    }
-                                                                    ?>
-                                                                </td>
-                                                                <td><?= number_format($devis_class->total_ttc($devis['total_ht']), 2, ',', ' ')." €"; ?></td>
-                                                                <td>
-                                                                    <?= $devis_class->etat_devis_format($devis['etat_devis']); ?>
-                                                                </td>
-                                                                <td>
-                                                                    <button type="button" class="btn" onclick="window.location.href='http://gestcom.cridip.com/token/devis.php?num_devis=<?= $devis['num_devis']; ?>'"><i class="fa fa-eye text-info"></i></button>
-                                                                </td>
-                                                            </tr>
-                                                        <?php }?>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div class="block full">
-                                                <div class="block-title">
-                                                    <h2><strong>Vos Commandes</h2>
-                                                </div>
-
-                                                <div class="table-responsive">
-                                                    <table id="table-commande" class="table table-vcenter table-condensed table-bordered">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>Numéro de commande</th>
-                                                            <th class="text-center">Date de la commande</th>
-                                                            <th>Montant</th>
-                                                            <th class="text-center">Etat</th>
-                                                            <th>Action</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <?php
-                                                        $sql_commande = mysql_query("SELECT * FROM c_commande WHERE idclient = '$idclient'")or die(mysql_error());
-                                                        while($commande = mysql_fetch_array($sql_commande))
-                                                        {
-                                                            ?>
-                                                            <tr>
-                                                                <td><?= $commande['num_commande']; ?></td>
-                                                                <td><?= date("d/m/Y", $commande['date_commande']); ?></td>
-                                                                <td><?= number_format($commande_class->total_ttc($commande['total_ht']), 2, ',', ' ')." €"; ?></td>
-                                                                <td>
-                                                                    <?= $commande_class->etat_cmd_format($commande['etat_commande']); ?>
-                                                                </td>
-                                                                <td>
-                                                                    <button type="button" class="btn" onclick="window.location.href='http://gestcom.cridip.com/token/commande.php?num_commande=<?= $commande['num_commande']; ?>'"><i class="fa fa-eye text-info"></i></button>
-                                                                </td>
-                                                            </tr>
-                                                        <?php }?>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
                                         </div>
                                         <?php } ?>
                                         <?php if($client['swd'] == 1){ ?>
