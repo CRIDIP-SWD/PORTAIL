@@ -481,7 +481,38 @@
 
                                         </form>
                                     </div>
-                                    <div class="tab-pane" id="modif-password">Profile..</div>
+                                    <div class="tab-pane" id="modif-password">
+                                        <form class="form-horizontal" id="form-validation" action="<?= ROOT,CONTROL; ?>client.php" method="post">
+                                            <input type="hidden" name="idclient" value="<?= $idclient; ?>" />
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="val_password">Mot de passe <span class="text-danger">*</span></label>
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <input type="password" id="val_password" name="password" class="form-control">
+                                                        <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="val_confirm_password">Confirmation du mot de passe <span class="text-danger">*</span></label>
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <input type="password" id="val_confirm_password" name="confirm_password" class="form-control">
+                                                        <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group form-actions">
+                                                <div class="col-sm-offset-9">
+                                                    <button class="btn btn-sm btn-primary" type="submit" name="action" value="modif-password-control"><i class="fa fa-pencil"></i> Modifier</button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
                                 </div>
                                 <!-- END Tabs Content -->
                             </div>

@@ -83,13 +83,13 @@ var FormsValidation = function() {
                     },
                     val_email: 'Please enter a valid email address',
                     val_password: {
-                        required: 'Please provide a password',
-                        minlength: 'Your password must be at least 5 characters long'
+                        required: 'Mot de Passe requis',
+                        minlength: 'Le mot de passe doit être de 5 Caractères minimum'
                     },
                     val_confirm_password: {
-                        required: 'Please provide a password',
-                        minlength: 'Your password must be at least 5 characters long',
-                        equalTo: 'Please enter the same password as above'
+                        required: 'Mot de Passe requis',
+                        minlength: 'Le mot de passe doit être de 5 Caractères minimum',
+                        equalTo: 'Confirmation du mot de passe incorrect'
                     },
                     val_bio: 'Don\'t be shy, share something with us :-)',
                     val_skill: 'Please select a skill!',
