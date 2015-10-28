@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2454952015">
-    <data-source source="LOCAL" name="MySQL - gwcswd@37.187.224.208" uuid="9a2f1b13-a93f-464a-b0c8-ab7ff819be55">
+  <component name="DataSourceManagerImpl" format="xml" hash="3873543613">
+    <data-source source="LOCAL" name="MySQL - gestcom@vps116895.ovh.net" uuid="9a2f1b13-a93f-464a-b0c8-ab7ff819be55">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://37.187.224.208:3306/gwcswd</jdbc-url>
+      <jdbc-url>jdbc:mysql://vps116895.ovh.net:3306/gestcom</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />

@@ -437,7 +437,7 @@
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="example-hf-email">Adresse Mail</label>
                                                 <div class="col-md-9">
-                                                    <input type="text" name="nom_client" class="form-control" value="<?= $client['email']; ?>">
+                                                    <input type="text" name="adresse_email" class="form-control" value="<?= $client['email']; ?>">
                                                 </div>
                                             </div>
 
@@ -504,5 +504,20 @@
             <script>$(function(){ FormsGeneral.init(); });</script>
             <script src="<?= ROOT,ASSETS,JS; ?>pages/formsValidation.js"></script>
             <script>$(function(){ FormsValidation.init(); });</script>
+            <?php if(isset($_GET['success']) && $_GET['success'] == 'edit-client'){ ?>
+                <script type="text/javascript">
+                    toastr.success("Vos informations ont bien été modifier","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+
+            <?php if(isset($_GET['error']) && $_GET['error'] == 'edit-client'){ ?>
+                <script type="text/javascript">
+                    toastr.success("Une erreur à eu lieu lors de la modification de vos information","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
 </body>
 </html>

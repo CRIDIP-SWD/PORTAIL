@@ -65,4 +65,29 @@ if(isset($_POST['action']) && $_POST['action'] == 'connexion')
         header("Location: ../index.php?view=login&error=champs");
     }
 }
+if(isset($_POST['action']) && $_POST['action'] == 'edit-client-control')
+{
+    include "../inc/config.php";
+    $idclient           = $_POST['idclient'];
+    $nom_client         = $_POST['nom_societe'];
+    $nom_societe        = $_POST['nom_societe'];
+    $adresse_mail       = $_POST['adresse_mail'];
+    $telephone          = $_POST['telephone'];
+    $adresse            = htmlentities($_POST['adresse']);
+    $code_postal        = $_POST['code_postal'];
+    $ville              = htmlentities($_POST['ville']);
+    $region             = htmlentities($_POST['region']);
+
+    $sql_up_client = mysql_query("UPDATE client SET nom_client = '$nom_client', nom_societe = '$nom_societe', email = '$adresse_mail', telephone = '$telephone',
+                                  adresse = '$adresse', code_postal = '$code_postal', ville = '$ville', region = '$region' WHERE idclient = '$idclient'")or die(mysql_error());
+
+    if($sql_up_client === TRUE)
+    {
+        header("Location: ../index.php?view=index&sub=compte&success=edit-client");
+    }else{
+        header("Location: ../index.php?view=index&sub=compte&error=edit-client");
+    }
+
+
+}
 
