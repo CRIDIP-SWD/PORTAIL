@@ -266,6 +266,7 @@
                                 <!-- Timeline Style Title -->
                                 <div class="block-title">
                                     <h2>Detail & Commentaire</h2>
+                                    <?= html_entity_decode($travaux['detail_travaux']); ?>
                                 </div>
                                 <!-- END Timeline Style Title -->
 

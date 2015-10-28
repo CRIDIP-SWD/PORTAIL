@@ -32,6 +32,7 @@ class client
         return $data;
     }
 }
+$client_class = new client();
 if(isset($_GET['action']) && $_GET['action'] == 'deconnexion')
 {
     session_start();
@@ -89,5 +90,21 @@ if(isset($_POST['action']) && $_POST['action'] == 'edit-client-control')
     }
 
 
+}
+if(isset($_POST['action']) && $_POST['action'] == 'modif-password-control'){
+    include "../inc/config.php";
+    $idclient               = $_POST['idclient'];
+    $password               = $_POST['password'];
+    $confirm_password       = $_POST['confirm_password'];
+
+    $sql_client = mysql_query("SELECT * FROM client WHERE idclient = '$idclient'")
+
+    if(!empty($password) && !empty($confirm_password))
+    {
+        if($password == $confirm_password)
+        {
+            $pass_crypt = sha1($password);
+        }
+    }
 }
 
