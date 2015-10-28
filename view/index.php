@@ -266,12 +266,13 @@
                                 <!-- Timeline Style Title -->
                                 <div class="block-title">
                                     <h2>Detail & Commentaire</h2>
-                                    <?= html_entity_decode($travaux['detail_travaux']); ?>
+
                                 </div>
                                 <!-- END Timeline Style Title -->
 
                                 <!-- Timeline Style Content -->
                                 <!-- You can remove the class .block-content-full if you want the block to have its regular padding -->
+                                <pre><?= html_entity_decode($travaux['detail_travaux']); ?></pre>
                                 <div class="timeline block-content-full">
                                     <!-- You can remove the class .timeline-hover if you don't want each event to be highlighted on mouse hover -->
                                     <ul class="timeline-list timeline-hover">
