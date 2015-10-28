@@ -107,6 +107,15 @@
                                         <td><?= $server['designation']; ?></td>
                                     </tr>
                                 <?php } ?>
+                                <?php
+                                $sql_server = mysql_query("SELECT * FROM p_service WHERE type_service = 'server'")or die(mysql_error());
+                                while($server = mysql_fetch_array($sql_server)){
+                                    $ovh_stat_server = $ovh_2->get("/dedicated/server/".$server['designation']);
+                                    ?>
+                                    <tr class="<?php if($ovh_stat_server['state'] == 'ok'){echo "success";}else{echo "danger";} ?>">
+                                        <td><?= $server['designation']; ?></td>
+                                    </tr>
+                                <?php } ?>
                                 </tbody>
                             </table>
                         </div>
