@@ -55,12 +55,19 @@
             <div id="page-content">
                 <div class="text-center"><img src="http://gestcom.cridip.com/assets/images/societe/cridip-paypal.png" class="img-responsive"/></div>
                 <?php if(!isset($_GET['sub'])){ ?>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT <strong>CRIDIP</strong></h1>
-                            <h3 class="text-center text-muted">Veuillez selectionner un onglet afin de choisir l'espace concerner.</h3>
+                    <?php if($client['cridip'] == 1){ ?>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">BIENVENUE SUR VOTRE ESPACE CLIENT <strong>CRIDIP</strong></h1>
+                                <h3 class="text-center text-muted">Veuillez selectionner un onglet du menu afin de voir vos documents.</h3>
+                            </div>
                         </div>
-                    </div>
+                    <?php }else{ ?>
+                        <div class="alert alert-danger alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            <h4><i class="fa fa-times-circle"></i> Erreur</h4> Soit vous n'êtes pas autorisez à acceder à cette onglet, soit aucun documents n'est disponible pour vous.</a>!
+                        </div>
+                    <?php } ?>
                 <?php } ?>
                 <?php if(isset($_GET['sub']) && $_GET['sub'] == 'etat_service'){ ?>
                     <div class="block">
