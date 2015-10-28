@@ -71,7 +71,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'edit-client-control')
     $idclient           = $_POST['idclient'];
     $nom_client         = $_POST['nom_societe'];
     $nom_societe        = $_POST['nom_societe'];
-    $adresse_mail       = $_POST['adresse_mail'];
+    $adresse_mail       = $_POST['adresse_email'];
     $telephone          = "0033".$_POST['telephone'];
     $adresse            = htmlentities($_POST['adresse']);
     $code_postal        = $_POST['code_postal'];
