@@ -54,3 +54,7 @@
     width: 120px;
     height: 47px;
 }
+#page-content > .cridip{background: url("http://gestcom.cridip.com/assets/images/societe/cridip.png") no-repeat;
+    position: relative;
+    top: 100px;
+    left: 500px;}

@@ -16,13 +16,13 @@
     <!-- Left Header Navigation -->
     <ul class="nav navbar-nav-custom">
         <li>
-            <a href="">GENERAL</a>
+            <a href="index.php?view=cridip">GENERAL</a>
         </li>
         <li>
-            <a href="">DEVELOPPEMENT & TECHNOLOGIE</a>
+            <a href="index.php?view=swd">DEVELOPPEMENT & TECHNOLOGIE</a>
         </li>
         <li>
-            <a href="">SCPVS</a>
+            <a href="index.php?view=scpvs">SCPVS</a>
         </li>
         <!-- END Template Options -->
     </ul>
