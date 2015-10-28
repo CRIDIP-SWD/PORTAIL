@@ -108,33 +108,8 @@ if(isset($_POST['action']) && $_POST['action'] == 'modif-password-control'){
             $pass_crypt = sha1($password);
             $sql_up_client = mysql_query("UPDATE client SET password = '$pass_crypt' WHERE idclient = '$idclient'")or die(mysql_error());
 
-            //Envoie du Mail
-            $to = $email;
-            $sujet = "<strong>".NOM_LOGICIEL."</strong> Modification du Mot de Passe";
 
-            $headers = 'Mime-Version: 1.0'."\r\n";
-            $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
-            $headers .= "\r\n";
-
-            ob_start();
-            ?>
-            <html>
-                <head>
-                </head>
-                <body>
-                    <table style="width: 100%;">
-                        <tr>
-                            <td style="text-align: center; font-size: 25px; font-weight: 800;"><?= NOM_LOGICIEL; ?></td>
-                        </tr>
-                    </table>
-                </body>
-            </html>
-            <?php
-            $msg = ob_get_contents();
-
-            $mail = mail($to,$sujet,$msg, $headers);
-
-            if($sql_up_client === TRUE AND $mail === TRUE)
+            if($sql_up_client === TRUE)
             {
                 header("Location: ../index.php?view=index&sub=compte&success=modif-pass");
             }else{

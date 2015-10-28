@@ -546,13 +546,43 @@
                     })
                 </script>
             <?php } ?>
-
-            <?php if(isset($_GET['error']) && $_GET['error'] == 'edit-client'){ ?>
+            <?php if(isset($_GET['success']) && $_GET['success'] == 'modif-pass'){ ?>
                 <script type="text/javascript">
-                    toastr.success("Une erreur à eu lieu lors de la modification de vos information","", {
+                    toastr.success("Votre mot de passe à été modifié","", {
                         "positionClass": "toast-bottom-right"
                     })
                 </script>
             <?php } ?>
+
+            <?php if(isset($_GET['error']) && $_GET['error'] == 'edit-client'){ ?>
+                <script type="text/javascript">
+                    toastr.error("Une erreur à eu lieu lors de la modification de vos information","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+            <?php if(isset($_GET['error']) && $_GET['error'] == 'modif-pass'){ ?>
+                <script type="text/javascript">
+                    toastr.error("Une erreur à eu lieu lors de la modification de votre mot de passe","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+
+            <?php if(isset($_GET['warning']) && $_GET['warning'] == 'no-egal'){ ?>
+                <script type="text/javascript">
+                    toastr.warning("Les mots de passes rentrée doivent être identiques","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+            <?php if(isset($_GET['warning']) && $_GET['warning'] == 'no-egal'){ ?>
+                <script type="text/javascript">
+                    toastr.warning("Un ou plusieurs champs sont vide","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+
 </body>
 </html>
