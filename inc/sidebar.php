@@ -28,19 +28,19 @@
                         <span class="sidebar-header-title">Facturation</span>
                     </li>
                     <li>
-                        <a href="index.php?view=cridip&sub=devis" <?php if($_GET['sub'] == 'devis'){echo "class='active'";} ?>>
+                        <a href="index.php?view=cridip&sub=devis" <?php if(isset($_GET['sub']) && $_GET['sub'] == 'devis'){echo "class='active'";} ?>>
                             <i class="gi gi-charts sidebar-nav-icon"></i>
                             <span class="sidebar-nav-mini-hide">Vos Devis</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?view=cridip&sub=commande" <?php if($_GET['sub'] == 'commande'){echo "class='active'";} ?>>
+                        <a href="index.php?view=cridip&sub=commande" <?php if(isset($_GET['sub']) && $_GET['sub'] == 'commande'){echo "class='active'";} ?>>
                             <i class="gi gi-charts sidebar-nav-icon"></i>
                             <span class="sidebar-nav-mini-hide">Vos Commandes</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?view=cridip&sub=facture" <?php if($_GET['sub'] == 'facture'){echo "class='active'";} ?>>
+                        <a href="index.php?view=cridip&sub=facture" <?php if(isset($_GET['sub']) && $_GET['sub'] == 'facture'){echo "class='active'";} ?>>
                             <i class="gi gi-charts sidebar-nav-icon"></i>
                             <span class="sidebar-nav-mini-hide">Vos Factures</span>
                         </a>
