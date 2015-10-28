@@ -97,13 +97,15 @@ if(isset($_POST['action']) && $_POST['action'] == 'modif-password-control'){
     $password               = $_POST['password'];
     $confirm_password       = $_POST['confirm_password'];
 
-    $sql_client = mysql_query("SELECT * FROM client WHERE idclient = '$idclient'")
+    $sql_client = mysql_query("SELECT * FROM client WHERE idclient = '$idclient'");
+    $client = mysql_fetch_array($sql_client);
 
     if(!empty($password) && !empty($confirm_password))
     {
         if($password == $confirm_password)
         {
             $pass_crypt = sha1($password);
+            
         }
     }
 }
