@@ -108,7 +108,7 @@
                                     </tr>
                                 <?php } ?>
                                 <?php
-                                $sql_server_1 = mysql_query("SELECT * FROM p_service WHERE type_service = 'server'")or die(mysql_error());
+                                $sql_server_1 = mysql_query("SELECT * FROM p_service WHERE type_service = 'dedicated'")or die(mysql_error());
                                 while($server = mysql_fetch_array($sql_server_1)){
                                     $ovh_stat_server = $ovh_2->get("/dedicated/server/".$server['designation']);
                                     ?>
