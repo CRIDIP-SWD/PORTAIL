@@ -73,10 +73,10 @@ if(isset($_POST['action']) && $_POST['action'] == 'edit-client-control')
     $nom_societe        = $_POST['nom_societe'];
     $adresse_mail       = $_POST['adresse_email'];
     $telephone          = "0033".$_POST['telephone'];
-    $adresse            = htmlentities($_POST['adresse']);
+    $adresse            = htmlentities(addslashes($_POST['adresse']));
     $code_postal        = $_POST['code_postal'];
-    $ville              = htmlentities($_POST['ville']);
-    $region             = htmlentities($_POST['region']);
+    $ville              = htmlentities(addslashes($_POST['ville']));
+    $region             = htmlentities(addslashes($_POST['region']));
 
     $sql_up_client = mysql_query("UPDATE client SET nom_client = '$nom_client', nom_societe = '$nom_societe', email = '$adresse_mail', telephone = '$telephone',
                                   adresse = '$adresse', code_postal = '$code_postal', ville = '$ville', region = '$region' WHERE idclient = '$idclient'")or die(mysql_error());
