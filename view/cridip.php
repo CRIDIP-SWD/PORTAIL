@@ -52,7 +52,8 @@
             <?php include "inc/headerbar.php"; ?>
 
             <!-- Page content -->
-            <div id="page-content" style="background: url('http://gestcom.cridip.com/assets/images/societe/cridip.png') no-repeat;position: relative;top: 100px;left: 500px;">
+            <div id="page-content">
+                <div class="text-center"><img src="http://gestcom.cridip.com/assets/images/societe/cridip-paypal.png" class="img-responsive"/></div>
                 <?php if(!isset($_GET['sub'])){ ?>
                     <div class="row">
                         <div class="col-md-12">
