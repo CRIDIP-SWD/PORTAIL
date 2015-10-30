@@ -12,6 +12,7 @@ DEFINE("JS", "js/");
 DEFINE("CSS", "css/");
 DEFINE("VENDOR", "vendor/");
 DEFINE("CONTROL", "control/");
+DEFINE("GESTCOM_TOKEN", "http://gestcom.cridip.com/token/");
 
 //DATE
 $date_jour = date("d-m-Y");

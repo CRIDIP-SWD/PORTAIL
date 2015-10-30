@@ -114,7 +114,7 @@
                                             <?= $devis_class->etat_devis_text($devis['etat_devis']); ?>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick=""><i class="fa fa-eye text-info"></i></button>
+                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>devis.php?num_devis=<?= $devis['num_devis']; ?>'"><i class="fa fa-eye text-info"></i></button>
                                         </td>
                                     </tr>
                                 <?php } ?>
