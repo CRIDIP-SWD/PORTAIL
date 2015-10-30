@@ -158,7 +158,7 @@
                                             <?= $commande_class->etat_cmd_text($commande['etat_commande']); ?>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>commande.php?num_cmd=<?= $commande['num_commande']; ?>'"><i class="fa fa-eye text-info"></i></button>
+                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>commande.php?num_commande=<?= $commande['num_commande']; ?>'"><i class="fa fa-eye text-info"></i></button>
                                         </td>
                                     </tr>
                                 <?php } ?>
