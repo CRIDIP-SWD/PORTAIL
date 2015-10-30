@@ -111,7 +111,7 @@
                                         </td>
                                         <td><?= number_format($devis_class->total_ttc($devis['total_ht']), 2, ',', ' ')." €"; ?></td>
                                         <td>
-                                            <?= $devis_class->etat_devis_format($devis_class->etat_devis_text($devis['etat_devis'])); ?>
+                                            <?= $devis_class->etat_devis_text($devis['etat_devis']); ?>
                                         </td>
                                         <td>
                                             <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick=""><i class="fa fa-eye text-info"></i></button>
