@@ -213,7 +213,7 @@
                                             <?= $facture_class->etat_fct_text($facture['etat_facture']); ?>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>devis.php?num_devis=<?= $facture['num_devis']; ?>'"><i class="fa fa-eye text-info"></i></button>
+                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>facture.php?num_facture=<?= $facture['num_facture']; ?>'"><i class="fa fa-eye text-info"></i></button>
                                         </td>
                                     </tr>
                                 <?php } ?>
