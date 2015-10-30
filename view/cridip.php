@@ -83,10 +83,10 @@
                                 <thead>
                                     <tr>
                                         <th>Numéro de Devis</th>
-                                        <th>Date du Devis</th>
-                                        <th>Date d'expiration</th>
-                                        <th>Total</th>
-                                        <th>Etat</th>
+                                        <th class="text-center">Date du Devis</th>
+                                        <th class="text-center">Date d'expiration</th>
+                                        <th class="text-right">Total</th>
+                                        <th class="text-center">Etat</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
