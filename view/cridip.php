@@ -79,17 +79,45 @@
 
                         <!-- Block Content -->
                         <div class="table-responsive">
-                            <table id="example-datatable" class="table table-vcenter table-condensed table-bordered">
+                            <table id="table-devis" class="table table-vcenter table-condensed table-bordered">
                                 <thead>
                                     <tr>
                                         <th>Numéro de Devis</th>
-                                        <th></th>
+                                        <th>Date du Devis</th>
+                                        <th>Date d'expiration</th>
+                                        <th>Total</th>
+                                        <th>Etat</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <?php
+                                $sql_devis = mysql_query("SELECT * FROM c_devis WHERE idclient = '$idclient'")or die(mysql_error());
+                                while($devis = mysql_fetch_array($sql_devis))
+                                {
+                                ?>
                                     <tr>
-
+                                        <td><?= $devis['num_devis']; ?></td>
+                                        <td><?= date("d/m/Y", $devis['date_devis']); ?></td>
+                                        <td>
+                                            <?php
+                                                if($devis['date_expire'] > $date_jour_strt)
+                                                {
+                                                    echo "<span class='label label-danger' data-toggle='tooltip' date-original-title='Expiré'>".date('d/m/Y',$devis['date_expire'])."</span>";
+                                                }else{
+                                                    echo "<span class='label label-success'>".date('d/m/Y',$devis['date_expire'])."</span>";
+                                                }
+                                            ?>
+                                        </td>
+                                        <td><?= number_format($devis_class->total_ttc($devis['total_ht']), 2, ',', ' ')." €"; ?></td>
+                                        <td>
+                                            <?= $devis_class->etat_devis_format($devis_class->etat_devis_text($devis['etat_devis'])); ?>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick=""><i class="fa fa-eye text-info"></i></button>
+                                        </td>
                                     </tr>
+                                <?php } ?>
                                 </tbody>
                             </table>
                         </div>
