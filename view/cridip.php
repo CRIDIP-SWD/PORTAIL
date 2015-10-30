@@ -168,6 +168,61 @@
                         <!-- END Block Content -->
                     </div>
                 <?php } ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'facture'){ ?>
+                    <div class="block">
+                        <!-- Block Title -->
+                        <div class="block-title">
+                            <h2>Vos Factures</h2>
+                        </div>
+                        <!-- END Block Title -->
+
+                        <!-- Block Content -->
+                        <div class="table-responsive">
+                            <table id="table-facture" class="table table-vcenter table-condensed table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Numéro de facture</th>
+                                    <th class="text-center">Date de la facture</th>
+                                    <th class="text-center">Date d'échéance</th>
+                                    <th class="text-right">Total</th>
+                                    <th class="text-center">Etat</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+                                $sql_facture = mysql_query("SELECT * FROM c_facture WHERE idclient = '$idclient'")or die(mysql_error());
+                                while($facture = mysql_fetch_array($sql_facture))
+                                {
+                                    ?>
+                                    <tr>
+                                        <td><?= $facture['num_facture']; ?></td>
+                                        <td class="text-center"><?= date("d/m/Y", $facture['date_facture']); ?></td>
+                                        <td class="text-center">
+                                            <?php
+                                            if($facture['date_echeance'] <= $date_jour_strt)
+                                            {
+                                                echo "<span class='label label-danger' data-toggle='tooltip' data-original-title='Arrivé à échéance'>".date('d/m/Y',$facture['date_echeance'])."</span>";
+                                            }else{
+                                                echo "<span class='label label-success'>".date('d/m/Y',$facture['date_echeance'])."</span>";
+                                            }
+                                            ?>
+                                        </td>
+                                        <td class="text-right"><?= number_format($facture_class->total_ttc($facture['total_ht']), 2, ',', ' ')." €"; ?></td>
+                                        <td class="text-center">
+                                            <?= $facture_class->etat_fct_text($facture['etat_facture']); ?>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>devis.php?num_devis=<?= $facture['num_devis']; ?>'"><i class="fa fa-eye text-info"></i></button>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- END Block Content -->
+                    </div>
+                <?php } ?>
             </div>
             <!-- END Page Content -->
 
