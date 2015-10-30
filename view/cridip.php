@@ -124,6 +124,50 @@
                         <!-- END Block Content -->
                     </div>
                 <?php } ?>
+                <?php if(isset($_GET['sub']) && $_GET['sub'] == 'commande'){ ?>
+                    <div class="block">
+                        <!-- Block Title -->
+                        <div class="block-title">
+                            <h2>Vos Commandes</h2>
+                        </div>
+                        <!-- END Block Title -->
+
+                        <!-- Block Content -->
+                        <div class="table-responsive">
+                            <table id="table-commande" class="table table-vcenter table-condensed table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Numéro de Commande</th>
+                                    <th class="text-center">Date de la commande</th>
+                                    <th class="text-right">Total</th>
+                                    <th class="text-center">Etat</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+                                $sql_commande = mysql_query("SELECT * FROM c_commande WHERE idclient = '$idclient'")or die(mysql_error());
+                                while($commande = mysql_fetch_array($sql_commande))
+                                {
+                                    ?>
+                                    <tr>
+                                        <td><?= $commande['num_commande']; ?></td>
+                                        <td class="text-center"><?= date("d/m/Y", $commande['date_commande']); ?></td>
+                                        <td class="text-right"><?= number_format($commande_class->total_ttc($commande['total_ht']), 2, ',', ' ')." €"; ?></td>
+                                        <td class="text-center">
+                                            <?= $commande_class->etat_cmd_text($commande['etat_commande']); ?>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn" data-toggle="tooltip" data-original-title="Voir" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>devis.php?num_cmd=<?= $commande['num_devis']; ?>'"><i class="fa fa-eye text-info"></i></button>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- END Block Content -->
+                    </div>
+                <?php } ?>
             </div>
             <!-- END Page Content -->
 
