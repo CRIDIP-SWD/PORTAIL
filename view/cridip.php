@@ -98,8 +98,8 @@
                                 ?>
                                     <tr>
                                         <td><?= $devis['num_devis']; ?></td>
-                                        <td><?= date("d/m/Y", $devis['date_devis']); ?></td>
-                                        <td>
+                                        <td class="text-center"><?= date("d/m/Y", $devis['date_devis']); ?></td>
+                                        <td class="text-center">
                                             <?php
                                                 if($devis['date_expire'] <= $date_jour_strt)
                                                 {
@@ -109,8 +109,8 @@
                                                 }
                                             ?>
                                         </td>
-                                        <td><?= number_format($devis_class->total_ttc($devis['total_ht']), 2, ',', ' ')." €"; ?></td>
-                                        <td>
+                                        <td class="text-right"><?= number_format($devis_class->total_ttc($devis['total_ht']), 2, ',', ' ')." €"; ?></td>
+                                        <td class="text-center">
                                             <?= $devis_class->etat_devis_text($devis['etat_devis']); ?>
                                         </td>
                                         <td>
