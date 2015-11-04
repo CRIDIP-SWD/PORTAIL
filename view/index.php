@@ -408,6 +408,7 @@
                                         <a href="index.php?view=index&sub=compte" class="list-group-item <?php if($_GET['sub'] == 'compte'){echo 'active';} ?>">
                                             <h4 class="list-group-item-heading">Compte</h4>
                                         </a>
+
                                     </div>
 
                                     <!-- END Block Content -->
@@ -423,6 +424,7 @@
                                     <ul class="nav nav-tabs pull-right" data-toggle="tabs">
                                         <li class="active"><a href="#info">Information Personnel</a></li>
                                         <li><a href="#modif-password">Modifier le mot de passe</a></li>
+                                        <li><a href="#info-bancaire">Information Banquaire</a></li>
                                     </ul>
                                 </div>
                                 <!-- END Block Tabs Title -->
@@ -525,6 +527,22 @@
                                             </div>
 
                                         </form>
+                                    </div>
+                                    <div class="tab-pane" id="info-bancaire">
+                                        <div class="block">
+                                            <!-- Block Title -->
+                                            <div class="block-title">
+                                                <div class="block-options pull-right">
+                                                    <a href="#add-info-bancaire" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Ajouter des coordonnées Bancaires"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                                <h2>Vos Information Bancaire</h2>
+                                            </div>
+                                            <!-- END Block Title -->
+
+                                            <!-- Block Content -->
+                                            <p>Example content..</p>
+                                            <!-- END Block Content -->
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- END Tabs Content -->

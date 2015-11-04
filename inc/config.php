@@ -14,6 +14,8 @@ DEFINE("VENDOR", "vendor/");
 DEFINE("CONTROL", "control/");
 DEFINE("GESTCOM_TOKEN", "http://gestcom.cridip.com/token/");
 
+
+
 //DATE
 $date_jour = date("d-m-Y");
 $date_jour_strt = strtotime(date("d-m-Y 00:00"));
