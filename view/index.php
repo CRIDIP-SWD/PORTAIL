@@ -573,6 +573,9 @@
                                                             </td>
                                                             <td>
                                                                 <button type="button" class="btn" onclick="window.location.href='<?= ROOT,CONTROL; ?>client.php?action=supp-info-bancaire&idclient=<?= $bq['idclient']; ?>&idclientbancaire=<?= $bq['idclientbancaire']; ?>'" data-toggle="tooltip" data-original-title="Supprimer le compte bancaire"><i class="fa fa-times text-danger"></i></button>
+                                                                <?php if($bq['signed'] == 0){ ?>
+                                                                    <button type="button" class="btn" onclick="window.location.href='<?= GESTCOM_TOKEN; ?>pdf/prlv.php?idclientbancaire=<?= $bq['idclientbancaire']; ?>'" data-toggle="tooltip" data-original-title="Télécharger la demande prélèvement"><i class="fa fa-file-pdf-o text-info"></i></button>
+                                                                <?php } ?>
                                                             </td>
                                                         </tr>
                                                     <?php } ?>
