@@ -571,7 +571,7 @@
                                                                 <?php if($bq['signed'] == 1){echo "<span class='label label-success'>Valider</span>";} ?>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn" onclick="window.location.href='http://gestcom.cridip.com/controlcridip/client.php?action=supp-info-bancaire&idclient=<?= $bq['idclient']; ?>&idclientbancaire=<?= $bq['idclientbancaire']; ?>'" data-toggle="tooltip" data-original-title="Supprimer le compte bancaire"><i class="fa fa-times text-danger"></i></button>
+                                                                <button type="button" class="btn" onclick="window.location.href='http://gestcom.cridip.com/control/cridip/client.php?action=supp-info-bancaire&idclient=<?= $bq['idclient']; ?>&idclientbancaire=<?= $bq['idclientbancaire']; ?>'" data-toggle="tooltip" data-original-title="Supprimer le compte bancaire"><i class="fa fa-times text-danger"></i></button>
                                                             </td>
                                                         </tr>
                                                     <?php } ?>
