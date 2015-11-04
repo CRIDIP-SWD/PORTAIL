@@ -424,7 +424,7 @@
                                     <ul class="nav nav-tabs pull-right" data-toggle="tabs">
                                         <li class="active"><a href="#info">Information Personnel</a></li>
                                         <li><a href="#modif-password">Modifier le mot de passe</a></li>
-                                        <li><a href="#info-bancaire">Information Banquaire</a></li>
+                                        <li><a href="#info-bancaire">Information Bancaire</a></li>
                                     </ul>
                                 </div>
                                 <!-- END Block Tabs Title -->
@@ -532,15 +532,50 @@
                                         <div class="block">
                                             <!-- Block Title -->
                                             <div class="block-title">
-                                                <div class="block-options pull-right">
-                                                    <a href="#add-info-bancaire" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Ajouter des coordonnées Bancaires"><i class="fa fa-plus"></i></a>
-                                                </div>
                                                 <h2>Vos Information Bancaire</h2>
                                             </div>
                                             <!-- END Block Title -->
 
                                             <!-- Block Content -->
-                                            <p>Example content..</p>
+                                            <div class="table-responsive">
+                                                <!--
+                                                Available Table Classes:
+                                                    'table'             - basic table
+                                                    'table-bordered'    - table with full borders
+                                                    'table-borderless'  - table with no borders
+                                                    'table-striped'     - striped table
+                                                    'table-condensed'   - table with smaller top and bottom cell padding
+                                                    'table-hover'       - rows highlighted on mouse hover
+                                                    'table-vcenter'     - middle align content vertically
+                                                -->
+                                                <table id="general-table" class="table table-striped table-vcenter">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 80px;" class="text-center"><input type="checkbox"></th>
+                                                            <th style="width: 150px;" class="text-center"><i class="gi gi-user"></i></th>
+                                                            <th>Client</th>
+                                                            <th>Email</th>
+                                                            <th>Subscription</th>
+                                                            <th style="width: 150px;" class="text-center">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><input type="checkbox" id="checkbox1-1" name="checkbox1-1"></td>
+                                                            <td class="text-center"><img src="img/placeholders/avatars/avatar1.jpg" alt="avatar" class="img-circle"></td>
+                                                            <td><a href="page_ready_user_profile.html">client1</a></td>
+                                                            <td>client1@example.com</td>
+                                                            <td><a href="javascript:void(0)" class="label label-warning">Trial</a></td>
+                                                            <td class="text-center">
+                                                                <div class="btn-group btn-group-xs">
+                                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-danger"><i class="fa fa-times"></i></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                             <!-- END Block Content -->
                                         </div>
                                     </div>
