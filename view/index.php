@@ -537,6 +537,7 @@
                                             <!-- END Block Title -->
 
                                             <!-- Block Content -->
+                                            <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#add-info-bancaire"><i class="fa fa-plus"></i> Ajouter des coordonnées bancaire</button>
                                             <div class="table-responsive">
                                                 <!--
                                                 Available Table Classes:
