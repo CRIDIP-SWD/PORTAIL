@@ -551,28 +551,30 @@
                                                 <table id="general-table" class="table table-striped table-vcenter">
                                                     <thead>
                                                         <tr>
-                                                            <th style="width: 80px;" class="text-center"><input type="checkbox"></th>
-                                                            <th style="width: 150px;" class="text-center"><i class="gi gi-user"></i></th>
-                                                            <th>Client</th>
-                                                            <th>Email</th>
-                                                            <th>Subscription</th>
-                                                            <th style="width: 150px;" class="text-center">Actions</th>
+                                                            <th>BIC</th>
+                                                            <th>IBAN</th>
+                                                            <th>Etat</th>
+                                                            <th>Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
+                                                    <?php
+                                                    $sql_bq = mysql_query("SELECT * FROM client_bancaire WHERE idclient = '$idclient'")or die(mysql_error());
+                                                    while($bq = mysql_fetch_array($sql_bq))
+                                                    {
+                                                    ?>
                                                         <tr>
-                                                            <td class="text-center"><input type="checkbox" id="checkbox1-1" name="checkbox1-1"></td>
-                                                            <td class="text-center"><img src="img/placeholders/avatars/avatar1.jpg" alt="avatar" class="img-circle"></td>
-                                                            <td><a href="page_ready_user_profile.html">client1</a></td>
-                                                            <td>client1@example.com</td>
-                                                            <td><a href="javascript:void(0)" class="label label-warning">Trial</a></td>
-                                                            <td class="text-center">
-                                                                <div class="btn-group btn-group-xs">
-                                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-danger"><i class="fa fa-times"></i></a>
-                                                                </div>
+                                                            <td><?= $bq['bic']; ?></td>
+                                                            <td><?= $bq['iban']; ?></td>
+                                                            <td>
+                                                                <?php if($bq['signed'] == 0){echo "<span class='label label-danger'>Non Signé</span>";} ?>
+                                                                <?php if($bq['signed'] == 1){echo "<span class='label label-success'>Valider</span>";} ?>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn" onclick="window.location.href='http://gestcom.cridip.com/controlcridip/client.php?action=supp-info-bancaire&idclient=<?= $bq['idclient']; ?>&idclientbancaire=<?= $bq['idclientbancaire']; ?>'" data-toggle="tooltip" data-original-title="Supprimer le compte bancaire"><i class="fa fa-times text-danger"></i></button>
                                                             </td>
                                                         </tr>
+                                                    <?php } ?>
                                                     </tbody>
                                                 </table>
                                             </div>
