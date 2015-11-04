@@ -571,7 +571,7 @@
                                                                 <?php if($bq['signed'] == 1){echo "<span class='label label-success'>Valider</span>";} ?>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn" onclick="window.location.href='http://gestcom.cridip.com/control/cridip/client.php?action=supp-info-bancaire&idclient=<?= $bq['idclient']; ?>&idclientbancaire=<?= $bq['idclientbancaire']; ?>'" data-toggle="tooltip" data-original-title="Supprimer le compte bancaire"><i class="fa fa-times text-danger"></i></button>
+                                                                <button type="button" class="btn" onclick="window.location.href='<?= ROOT,CONTROL; ?>client.php?action=supp-info-bancaire&idclient=<?= $bq['idclient']; ?>&idclientbancaire=<?= $bq['idclientbancaire']; ?>'" data-toggle="tooltip" data-original-title="Supprimer le compte bancaire"><i class="fa fa-times text-danger"></i></button>
                                                             </td>
                                                         </tr>
                                                     <?php } ?>
@@ -583,6 +583,41 @@
                                     </div>
                                 </div>
                                 <!-- END Tabs Content -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" id="add-info-bancaire" tabindex="-1" role="dialog" aria-labelledby="largeModalHead" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="largeModalHead"><i class="fa fa-plus"></i> Ajout d'une Information Bancaire</h4>
+                                </div>
+                                <form class="form-horizontal" action="<?= ROOT,CONTROL; ?>client.php" method="POST">
+                                    <input type="hidden" name="idclient" value="<?= $idclient; ?>" />
+                                    <div class="modal-body">
+
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">BIC</label>
+                                            <div class="col-md-10">
+                                                <input type="text" id="masked_bic" class="form-control" name="bic" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">IBAN</label>
+                                            <div class="col-md-10">
+                                                <input type="text" id="masked_iban" class="iban form-control" name="iban" placeholder="FRXX XXXX XXXX XXXX XXXX"/>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success" name="action" value="add-info-bancaire"><i class="fa fa-check"></i> Valider</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -619,6 +654,20 @@
                     })
                 </script>
             <?php } ?>
+            <?php if(isset($_GET['success']) && $_GET['success'] == 'supp-info-bancaire'){ ?>
+                <script type="text/javascript">
+                    toastr.success("Vos informations Bancaires ont été supprimer","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+            <?php if(isset($_GET['success']) && $_GET['success'] == 'add-info-bancaire'){ ?>
+                <script type="text/javascript">
+                    toastr.success("Vos informations Bancaires ont été ajouter","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
 
             <?php if(isset($_GET['error']) && $_GET['error'] == 'edit-client'){ ?>
                 <script type="text/javascript">
@@ -630,6 +679,20 @@
             <?php if(isset($_GET['error']) && $_GET['error'] == 'modif-pass'){ ?>
                 <script type="text/javascript">
                     toastr.error("Une erreur à eu lieu lors de la modification de votre mot de passe","", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+            <?php if(isset($_GET['error']) && $_GET['error'] == 'supp-info-bancaire'){ ?>
+                <script type="text/javascript">
+                    toastr.error("Vos informations Bancaires n'ont pas été supprimer","ERREUR", {
+                        "positionClass": "toast-bottom-right"
+                    })
+                </script>
+            <?php } ?>
+            <?php if(isset($_GET['error']) && $_GET['error'] == 'add-info-bancaire'){ ?>
+                <script type="text/javascript">
+                    toastr.error("Vos informations Bancaires n'ont pas été ajouter","ERREUR", {
                         "positionClass": "toast-bottom-right"
                     })
                 </script>

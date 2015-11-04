@@ -122,4 +122,36 @@ if(isset($_POST['action']) && $_POST['action'] == 'modif-password-control'){
         header("Location: ../index.php?view=index&sub=compte&warning=champs");
     }
 }
+if(isset($_GET['action']) && $_GET['action'] == 'supp-info-bancaire')
+{
+    include "../inc/config.php";
+    $idclient = $_GET['idclient'];
+    $idclientbancaire = $_GET['idclientbancaire'];
+
+    $sql_delete_info = mysql_query("DELETE FROM client_bancaire WHERE idclientbancaire = '$idclientbancaire'")or die(mysql_error());
+
+    if($sql_delete_info === TRUE)
+    {
+        header("Location: ../index.php?view=index&sub=compte&success=supp-info-bancaire");
+    }else{
+        header("Location: ../index.php?view=index&sub=compte&error=supp-info-bancaire");
+    }
+
+}
+if(isset($_POST['action']) && $_POST['action'] == "add-info-bancaire")
+{
+    include "../inc/config.php";
+    $idclient = $_POST['idclient'];
+    $bic = $_POST['bic'];
+    $iban = $_POST['iban'];
+
+    $sql_add_banque = mysql_query("INSERT INTO `client_bancaire`(`idclientbancaire`, `idclient`, `iban`, `bic`, `signed`) VALUES (NULL,'$idclient','$iban','$bic','0')")or die(mysql_error());
+
+    if($sql_add_banque === TRUE)
+    {
+        header("Location: ../index.php?view=index&sub=compte&success=add-info-bancaire");
+    }else{
+        header("Location: ../index.php?view=index&sub=compte&error=add-info-bancaire");
+    }
+}
 

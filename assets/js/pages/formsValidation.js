@@ -113,6 +113,8 @@ var FormsValidation = function() {
             $('#masked_taxid').mask('99-9999999');
             $('#masked_ssn').mask('999-99-9999');
             $('#masked_pkey').mask('a*-999-a999');
+            $('#masked_bic').mask('aaaaaa99aaa');
+            $('#masked_iban').mask('FR99 9999 9999 9999 9999 9999 999');
             $('#telephone').mask('0033999999999');
             $('#code_postal').mask('99999');
         }
