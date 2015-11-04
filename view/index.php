@@ -601,6 +601,8 @@
             <script>$(function(){ FormsGeneral.init(); });</script>
             <script src="<?= ROOT,ASSETS,JS; ?>pages/formsValidation.js"></script>
             <script>$(function(){ FormsValidation.init(); });</script>
+            <script src="<?= ROOT,ASSETS,JS; ?>pages/tablesGeneral.js"></script>
+            <script>$(function(){ TablesGeneral.init(); });</script>
             <?php if(isset($_GET['success']) && $_GET['success'] == 'edit-client'){ ?>
                 <script type="text/javascript">
                     toastr.success("Vos informations ont bien été modifier","", {
