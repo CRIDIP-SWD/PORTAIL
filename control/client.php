@@ -4,7 +4,7 @@ class client
 
     public function info_client($login)
     {
-        $sql_user = mysql_query("SELECT * FROM client WHERE email = '$login'")or die(mysql_error());
+        $sql_user = mysql_query("SELECT * FROM client WHERE num_client = '$login'")or die(mysql_error());
         $client = mysql_fetch_array($sql_user);
         return $client;
     }
