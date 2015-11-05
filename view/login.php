@@ -70,8 +70,8 @@
             <div class="form-group">
                 <div class="col-xs-12">
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="gi gi-envelope"></i></span>
-                        <input type="text" id="login-email" name="email" class="form-control input-lg" placeholder="Email">
+                        <span class="input-group-addon"><i class="gi gi-user"></i></span>
+                        <input type="text" id="login-email" name="num_client" class="form-control input-lg" placeholder="Numéro de Compte">
                     </div>
                 </div>
             </div>

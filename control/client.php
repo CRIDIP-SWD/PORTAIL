@@ -42,19 +42,19 @@ if(isset($_GET['action']) && $_GET['action'] == 'deconnexion')
 }
 if(isset($_POST['action']) && $_POST['action'] == 'connexion')
 {
-    if ((isset($_POST['email']) && !empty($_POST['email'])) && (isset($_POST['password']) && !empty($_POST['password']))) {
-        $login = $_POST['email'];
+    if ((isset($_POST['num_client']) && !empty($_POST['num_client'])) && (isset($_POST['password']) && !empty($_POST['password']))) {
+        $login = $_POST['num_client'];
         $password = $_POST['password'];
         $pass_enc = sha1($password);
 
         include "../inc/config.php";
-        $sql_verif_account = mysql_query("SELECT COUNT(*) FROM client WHERE email = '$login' AND password = '$pass_enc'")or die(mysql_error());
+        $sql_verif_account = mysql_query("SELECT COUNT(*) FROM client WHERE num_client = '$login' AND password = '$pass_enc'")or die(mysql_error());
         $data = mysql_result($sql_verif_account, 0);
 
         if($data == 1)
         {
             session_start();
-            $_SESSION['login'] = $_POST['email'];
+            $_SESSION['login'] = $_POST['num_client'];
             header("Location: ../index.php?view=index");
             exit();
         }elseif($data == 0){
