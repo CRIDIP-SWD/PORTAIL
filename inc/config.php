@@ -5,7 +5,7 @@ DEFINE("VERSION_LOGICIEL", "0.1.0");
 DEFINE("BUILD_LOGICIEL", "1236");
 
 //DEFINE LINK
-DEFINE("ROOT", "http://portail.cridip.com/");
+DEFINE("ROOT", "https://portail.cridip.com/");
 DEFINE("ASSETS", "assets/");
 DEFINE("IMAGES", "img/");
 DEFINE("JS", "js/");
