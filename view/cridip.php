@@ -53,7 +53,7 @@
 
             <!-- Page content -->
             <div id="page-content">
-                <div class="text-center"><img src="http://gestcom.cridip.com/assets/images/societe/cridip-paypal.png" class="img-responsive"/></div>
+                <div class="text-center"><img src="https://gestcom.cridip.com/assets/images/societe/cridip-paypal.png" class="img-responsive"/></div>
                 <?php if(!isset($_GET['sub'])){ ?>
                     <?php if($client['cridip'] == 1){ ?>
                         <div class="row">
